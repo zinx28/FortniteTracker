@@ -9,6 +9,13 @@ import { existsSync, readFileSync, writeFileSync } from "fs";
 import { WebhookClient, EmbedBuilder, AttachmentBuilder } from "discord.js";
 import path from "path";
 var modifications: Record<string, Record<string, string>> = {};
+type TextChanges = {
+  // stirng is the key
+  OLDString: string;
+  NativateString: string;
+  NewString: string;
+};
+var textChanges: Record<string, TextChanges> = {}; // ONLY CHANGES
 
 var modificationsDataTable: Record<string, Record<string, string>> = {};
 export async function diffFile(
@@ -17,6 +24,8 @@ export async function diffFile(
 ): Promise<string> {
   modifications = {};
   modificationsDataTable = {};
+  textChanges = {};
+
   let cachedContent = "";
   if (existsSync(cachedPath)) {
     cachedContent = readFileSync(cachedPath, "utf8");
@@ -79,7 +88,7 @@ export async function diffFile(
         );
 
         if (match) {
-          console.log("Line:", line, "Match:", match);
+          //console.log("Line:", line, "Match:", match);
           /*
             [
   "+CurveTable=/SproutItems_Currency/DataTables/SproutItems_CurrencyGameData;RowUpdate;Default.Currency.Limit;2.0;300000.0",
@@ -105,9 +114,9 @@ export async function diffFile(
             /^\+\s*DataTable=([^;]+);([^;]+);([^;]+);([^;]+);([^;]+)$/
           );
 
-          console.log("Line:", line, "Match:", match);
-
           if (match) {
+            //console.log("Line:", line, "Match:", match);
+
             const dataTable = match[1];
             const rowUpdate = match[2];
             const prop1 = match[3];
@@ -119,12 +128,83 @@ export async function diffFile(
             }
 
             modificationsDataTable[dataTable][prop2] = newValue;
+          } else {
+            match = line.match(
+              /^\+TextReplacements=\(Category=([^,]+), Namespace="([^"]*)", bIsMinimalPatch=[^,]+, Key="([^"]+)", NativeString="([^"]+)", LocalizedStrings=\((.*)\)\)$/
+            );
+
+            if (match) {
+              console.log(match);
+              const key = match[3];
+              const locale = match[2];
+              const nativeString = match[4];
+              const localizedString = match[5];
+              const enMatch = localizedString.match(/\("en","([^"]+)"\)/);
+
+              console.log("frfr");
+
+              if (!textChanges[key]) {
+                textChanges[key] = {
+                  OLDString: "",
+                  NativateString: "",
+                  NewString: "",
+                };
+              }
+
+              if (enMatch) {
+                const englishText = enMatch[1];
+                console.log(englishText);
+
+                var StringFr = "";
+                if (nativeString != englishText) {
+                  StringFr = nativeString;
+                }
+
+                textChanges[key] = {
+                  NewString: englishText,
+                  NativateString: StringFr,
+                  OLDString: "",
+                };
+              }
+            }
           }
         }
       });
 
       removedLines.forEach((line) => {
         diffResult += `- ${line}\n`;
+
+        const match = line.match(
+          /^\+TextReplacements=\(Category=([^,]+), Namespace="([^"]*)", bIsMinimalPatch=[^,]+, Key="([^"]+)", NativeString="([^"]+)", LocalizedStrings=\((.*)\)\)$/
+        );
+
+        if (match) {
+          const key = match[3];
+          const locale = match[2];
+
+          if (textChanges[key]) {
+            const localizedString = match[5];
+            const enMatch = localizedString.match(/\("en","([^"]+)"\)/);
+
+            console.log("frfr2");
+            if (enMatch) {
+              const englishText = enMatch[1];
+              console.log(englishText);
+
+              console.log(textChanges[key]);
+
+              if (textChanges[key].NewString != englishText) {
+                textChanges[key].OLDString = englishText;
+                console.log("detected a change");
+              } else {
+                delete textChanges[key];
+              }
+            }
+          }
+
+          //console.log("hi");
+          // console.log(textChanges);
+        }
       });
     }
   });
@@ -207,8 +287,7 @@ export async function FortniteCloudStorage() {
                 );
 
                 if (DataChanged) {
-
-                  var EmbedMessages: EmbedBuilder[] = []
+                  var EmbedMessages: EmbedBuilder[] = [];
 
                   if (Object.keys(modifications).length > 0) {
                     const embed = new EmbedBuilder()
@@ -242,7 +321,7 @@ export async function FortniteCloudStorage() {
                     Object.keys(modificationsDataTable).forEach((dataTable) => {
                       embed2.setDescription("Changed data: " + dataTable);
                       const data = modificationsDataTable[dataTable];
-  
+
                       Object.keys(data).forEach((property) => {
                         embed2.addFields([
                           {
@@ -252,7 +331,32 @@ export async function FortniteCloudStorage() {
                         ]);
                       });
                     });
-  
+
+                    EmbedMessages.push(embed2);
+                  }
+
+                  if (Object.keys(textChanges).length > 0) {
+                    const embed2 = new EmbedBuilder()
+                      .setColor("Random")
+                      .setTitle("Strimg: Modifications")
+                      .setTimestamp();
+
+                    Object.keys(textChanges).forEach((KEY) => {
+                     
+                      const data = textChanges[KEY];
+                        if(data.OLDString.trim() === "")
+                          data.OLDString = data.NativateString;
+                    
+                        var FRFR = `~~${data.OLDString}~~ \n${data.NewString}`
+                        embed2.addFields([
+                          {
+                            name: KEY,
+                            value: FRFR,
+                          },
+                        ]);
+               
+                    });
+
                     EmbedMessages.push(embed2);
                   }
 
@@ -265,13 +369,13 @@ export async function FortniteCloudStorage() {
                     await webhook.send({
                       content: `${cachedItem.filename} has been updated!`,
                       files: [attachment],
-                      embeds: EmbedMessages
+                      embeds: EmbedMessages,
                     });
                   } else {
                     if (DataChanged.trim() !== "") {
                       await webhook.send({
                         content: `${cachedItem.filename} has been updated! \n\`\`\`diff\n${DataChanged}\n\`\`\``,
-                        embeds: EmbedMessages
+                        embeds: EmbedMessages,
                       });
                     }
                   }

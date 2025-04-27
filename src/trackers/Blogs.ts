@@ -105,7 +105,7 @@ export async function GetComBlogs() {
 }
 
 //        return "/api/cms/v1/articles?postsPerPage=".concat(t, "&offset=").concat(i, "&locale=").concat(e, "&rootPageSlug=blog-creator-portal")
-// Create Fortnite API (nextjs)
+// Create Fortnite API (nextjs~)
 
 //https://create.fortnite.com/api/cms/v1/articles?postsPerPage=10&rootPageSlug=blog-creator-portal
 
