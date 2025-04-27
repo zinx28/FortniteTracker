@@ -49,14 +49,42 @@ export async function FortniteTracker() {
     },
     {
         Name: "Partners-Prod",
-        URL: "https://fortnite-public-service-partners-prod.ol.epicgames.com/fortnite/api/version"
+        URL: "https://fortnite-public-service-partners-prod.ol.epicgames.com/fortnite/api/version"  
     },
     {
         Name: "PartnerStable-Prod",
         URL: "https://fortnite-public-service-partnersstable-prod.ol.epicgames.com/fortnite/api/version"
     },
+    {
+        Name: "DevPlayTestJ-Prod",
+        URL: "https://fortnite-public-service-devplaytestj-prod.ol.epicgames.com/fortnite/api/version" // fngw-mcp-gc-devplaytestj-prod.ol.epicgames.com, 
+    },
+    {
+        Name: "BacchusPlayTest-Prod",
+        URL: "https://fortnite-public-service-bacchusplaytest-prod.ol.epicgames.com/fortnite/api/version"
+    },
+    {
+        Name: "LoadTest-Prod",
+        URL: "https://fngw-mcp-ds-loadtest-prod.ol.epicgames.com/fortnite/api/version"
+    },
+    {
+        Name: "PublicTest-Prod",
+        URL: "https://fngw-mcp-gc-publictest-prod.ol.epicgames.com/fortnite/api/version" // useless from the cln and build ~ fortnite-public-service-publictest-prod.ol.epicgames.com ~ fortnite-public-service-extqauetestingb-prod.ol.epicgames.com
+    }, // ^^ i dont want to have it updating  being useless
+    {
+        Name: "Floss-Prod",
+        URL: "https://fortnite-public-service-floss-prod.ol.epicgames.com/fortnite/api/version" 
+    },
+    {
+        Name: "Floss-Prod",
+        URL: "https://fortnite-public-service-floss-prod.ol.epicgames.com/fortnite/api/version"  // pretty useless i need to test run this
+    },
+    {
+        Name: "Floss-Prod",
+        URL: "https://fortnite-public-service-floss-prod.ol.epicgames.com/fortnite/api/version" 
+    },
   ];
-
+  //devplaytestj
   GameVersionProds.forEach(async (e) => {
     const res = await axios.get(e.URL, {
       headers: {
@@ -125,7 +153,7 @@ export async function FortniteTracker() {
           }
         }
       }
-      
+
       writeFileSync(
         path.join("cached", e.Name),
         JSON.stringify(res.data)
