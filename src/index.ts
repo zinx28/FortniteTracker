@@ -31,15 +31,17 @@ async function FetchAllThings() // yes things
 {
     FortniteTracker();
     FortniteCloudStorage();
-    /*JustGrabLinskFromBP();
+    JustGrabLinskFromBP();
     FortniteStatus();
     FortniteGame();
     GetComBlogs();
     GetBlogs();
-    GetCreateBlogs();*/
+    GetCreateBlogs();
+    
 }
 
 await FetchAllThings();
 DiscordWebhookt();
 
+setInterval(FetchAllThings, 50 * 1000)
 setInterval(DiscordWebhookt, 60 * 1000)
