@@ -180,7 +180,6 @@ export async function diffFile(
 
         if (match) {
           const key = match[3];
-          const locale = match[2];
 
           if (textChanges[key]) {
             const localizedString = match[5];
@@ -292,7 +291,7 @@ export async function FortniteCloudStorage() {
                   if (Object.keys(modifications).length > 0) {
                     const embed = new EmbedBuilder()
                       .setColor("Random")
-                      .setTitle("Smart Summary: CurveTable Modifications")
+                      .setTitle("CurveTable modification detected")
                       .setTimestamp();
 
                     Object.keys(modifications).forEach((dataTable) => {
@@ -315,7 +314,7 @@ export async function FortniteCloudStorage() {
                   if (Object.keys(modificationsDataTable).length > 0) {
                     const embed2 = new EmbedBuilder()
                       .setColor("Random")
-                      .setTitle("Smart Summary: Data Table Modifications")
+                      .setTitle("DataTable modification detected")
                       .setTimestamp();
 
                     Object.keys(modificationsDataTable).forEach((dataTable) => {
@@ -338,23 +337,21 @@ export async function FortniteCloudStorage() {
                   if (Object.keys(textChanges).length > 0) {
                     const embed2 = new EmbedBuilder()
                       .setColor("Random")
-                      .setTitle("Strimg: Modifications")
+                      .setTitle("String modification detected")
                       .setTimestamp();
 
                     Object.keys(textChanges).forEach((KEY) => {
-                     
                       const data = textChanges[KEY];
-                        if(data.OLDString.trim() === "")
-                          data.OLDString = data.NativateString;
-                    
-                        var FRFR = `~~${data.OLDString}~~ \n${data.NewString}`
-                        embed2.addFields([
-                          {
-                            name: KEY,
-                            value: FRFR,
-                          },
-                        ]);
-               
+                      if (data.OLDString.trim() === "")
+                        data.OLDString = data.NativateString;
+
+                      var FRFR = `~~${data.OLDString}~~ \n${data.NewString}`;
+                      embed2.addFields([
+                        {
+                          name: KEY,
+                          value: FRFR,
+                        },
+                      ]);
                     });
 
                     EmbedMessages.push(embed2);
@@ -380,7 +377,10 @@ export async function FortniteCloudStorage() {
                     }
                   }
 
-                  //console.log(DataChanged);
+                  writeFileSync(
+                    path.join("cached", cachedItem.uniqueFilename),
+                    res.data
+                  );
                 }
               }
             }
