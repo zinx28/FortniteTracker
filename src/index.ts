@@ -6,6 +6,7 @@ import { sendBlogembed, sendImageEmbed } from './utils/discordWeb';
 import { FortniteStatus } from './trackers/Status';
 import { ClearALLNEWCACHEDBlogsIds, loadBlogsCachedLinks } from './utils/blogCache';
 import { FortniteCloudStorage } from './trackers/Cloudstorage';
+import { FortniteTracker } from './trackers/StagingTracker';
 dotenv.config();
 
 async function DiscordWebhookt() 
@@ -28,6 +29,7 @@ async function DiscordWebhookt()
 
 async function FetchAllThings() // yes things
 {
+    FortniteTracker();
     FortniteCloudStorage();
     /*JustGrabLinskFromBP();
     FortniteStatus();
