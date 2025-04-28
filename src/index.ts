@@ -5,7 +5,7 @@ import {
   ClearALLNEWCACHEDLINMKS,
   loadNewCachedLinks,
 } from "./utils/cachedData";
-import { sendBlogembed, sendImageEmbed } from "./utils/discordWeb";
+import { sendBlogembed, sendImageEmbed, sendNewsembed } from "./utils/discordWeb";
 import { FortniteStatus } from "./trackers/Status";
 import {
   ClearALLNEWCACHEDBlogsIds,
@@ -15,6 +15,8 @@ import { FortniteCloudStorage } from "./trackers/Cloudstorage";
 import { FortniteTracker } from "./trackers/StagingTracker";
 import { KeyChain } from "./trackers/Keychain";
 import { VerifyGenerateUserAuth } from "./utils/GenerateAuth";
+import { NewsChecker } from "./trackers/NewsChecks";
+import { ClearALLNEWCACHEDNewssIds, loadNewsCachedLinks } from "./utils/newsCache";
 dotenv.config();
 var ShouldGenerate = false;
 
@@ -36,6 +38,13 @@ async function DiscordWebhookt() {
   AllBlogs.forEach((e) => {
     sendBlogembed(e);
   });
+
+  var AllNews = loadNewsCachedLinks();
+  ClearALLNEWCACHEDNewssIds();
+
+  AllNews.forEach((e) => {
+    sendNewsembed(e);
+  });
 }
 
 async function FetchAllThings() {
@@ -45,6 +54,7 @@ async function FetchAllThings() {
   if (ShouldGenerate) {
     // depends if token is even vaild
     KeyChain();
+    NewsChecker();
   } else console.log("Disabled due to invaild auth!");
 
   // under some use auth and some not but not user based

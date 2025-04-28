@@ -25,8 +25,9 @@ export async function GetBlogs() {
       if (newLinks.length > 10) return; // if theres no cache file createwd yet then it would basically spam discord
 
       saveNewLinks(newLinks);
+    }
 
-      var BlogsList = rawTexxt.blogList;
+    var BlogsList = rawTexxt.blogList;
 
       if (BlogsList) {
         const IDList: string[] = [];
@@ -53,7 +54,6 @@ export async function GetBlogs() {
         saveIDBlogs(IDList);
         saveNewLinksBlogs(NewIds);
       }
-    }
   } catch (err) {
     console.error(err);
   }
@@ -76,35 +76,35 @@ export async function GetComBlogs() {
     if (newLinks.length > 10) return; // if theres no cache file then it would basically spam discord
 
     saveNewLinks(newLinks);
+  }
 
-    var BlogsList = rawTexxt.blogList;
+  var BlogsList = rawTexxt.blogList;
 
-    if (BlogsList) {
-      const IDList: string[] = [];
-      const NewIds: BlogType[] = [];
+  if (BlogsList) {
+    const IDList: string[] = [];
+    const NewIds: BlogType[] = [];
 
-      (BlogsList as any[]).forEach((e) => {
-        IDList.push(e._id as string);
-        if (!cachedBlogs.find((e3) => e3 === (e._id as string))) {
-          const descriptionMatch = e._metaTags
-            ? e._metaTags.match(
-                /<meta\s+name="description"\s+content="(.*?)">/
-              )[1]
-            : "";
-          NewIds.push({
-            _id: e._id as string,
-            image: e.image as string,
-            gridTitle: e.title as string,
-            urlPattern: `https://www.fortnite.com/competitive/news/${e.slug}`,
-            description: descriptionMatch,
-          });
-        }
-      });
+    (BlogsList as any[]).forEach((e) => {
+      IDList.push(e._id as string);
+      if (!cachedBlogs.find((e3) => e3 === (e._id as string))) {
+        const descriptionMatch = e._metaTags
+          ? e._metaTags.match(
+              /<meta\s+name="description"\s+content="(.*?)">/
+            )[1]
+          : "";
+        NewIds.push({
+          _id: e._id as string,
+          image: e.image as string,
+          gridTitle: e.title as string,
+          urlPattern: `https://www.fortnite.com/competitive/news/${e.slug}`,
+          description: descriptionMatch,
+        });
+      }
+    });
 
-      console.log(NewIds);
-      saveIDBlogs(IDList);
-      saveNewLinksBlogs(NewIds);
-    }
+    console.log(NewIds);
+    saveIDBlogs(IDList);
+    saveNewLinksBlogs(NewIds);
   }
 }
 
@@ -130,33 +130,33 @@ export async function GetCreateBlogs() {
     if (newLinks.length > 10) return; // if theres no cache file then it would basically spam discord
 
     saveNewLinks(newLinks);
+  }
 
-    var BlogsList = rawTexxt.blogList;
+  var BlogsList = rawTexxt.blogList;
 
-    if (BlogsList) {
-      const IDList: string[] = [];
-      const NewIds: BlogType[] = [];
+  if (BlogsList) {
+    const IDList: string[] = [];
+    const NewIds: BlogType[] = [];
 
-      (BlogsList as any[]).forEach((e) => {
-        IDList.push(e._id as string);
-        if (!cachedBlogs.find((e3) => e3 === (e._id as string))) {
-          const descriptionMatch = e._metaTags
-            ? e._metaTags.match(
-                /<meta\s+name="description"\s+content="(.*?)">/
-              )[1]
-            : "";
-          NewIds.push({
-            _id: e._id as string,
-            image: e.image as string,
-            gridTitle: e.title as string,
-            urlPattern: `https://create.fortnite.com/news/${e.slug}`,
-            description: descriptionMatch,
-          });
-        }
-      });
+    (BlogsList as any[]).forEach((e) => {
+      IDList.push(e._id as string);
+      if (!cachedBlogs.find((e3) => e3 === (e._id as string))) {
+        const descriptionMatch = e._metaTags
+          ? e._metaTags.match(
+              /<meta\s+name="description"\s+content="(.*?)">/
+            )[1]
+          : "";
+        NewIds.push({
+          _id: e._id as string,
+          image: e.image as string,
+          gridTitle: e.title as string,
+          urlPattern: `https://create.fortnite.com/news/${e.slug}`,
+          description: descriptionMatch,
+        });
+      }
+    });
 
-      saveIDBlogs(IDList);
-      saveNewLinksBlogs(NewIds);
-    }
+    saveIDBlogs(IDList);
+    saveNewLinksBlogs(NewIds);
   }
 }

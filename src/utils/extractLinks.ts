@@ -29,13 +29,15 @@ export async function fetchText(url: string) {
 
 export function getNewLinks(oldLinks: string[], currentLinks: string[]) {
   const oldSet = new Set(oldLinks);
-  return currentLinks
+  var Links = currentLinks
+    .map((link) => (link.includes("?") ? link.split("?")[0] : link))
     .filter((link) => !oldSet.has(link))
     .filter((link) => /\.(png|jpe?g|webp|gif|bmp|svg)$/i.test(link));
+
+  return Links.filter((link) => !oldSet.has(link)); // removes some left overs
 }
 
 export function getNewItem(olditems: string[], currentItems: string[]) {
   const oldSet = new Set(olditems);
   return currentItems.filter((word) => !oldSet.has(word));
 }
-
