@@ -33,3 +33,9 @@ export function getNewLinks(oldLinks: string[], currentLinks: string[]) {
     .filter((link) => !oldSet.has(link))
     .filter((link) => /\.(png|jpe?g|webp|gif|bmp|svg)$/i.test(link));
 }
+
+export function getNewItem(olditems: string[], currentItems: string[]) {
+  const oldSet = new Set(olditems);
+  return currentItems.filter((word) => !oldSet.has(word));
+}
+
