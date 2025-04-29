@@ -264,8 +264,10 @@ export async function FortniteCloudStorage() {
           );
 
           if (cachedItem) {
+            if(!cachedItem.filename.includes(".json"))
             if (cachedItem.uploaded != newData.uploaded) {
               console.log("YE~ " + JSON.stringify(cachedItem));
+              
               // const cachedPath = path.join("cached", cachedItem.uniqueFilename);
               const res = await axios.get(
                 `https://fngw-mcp-gc-livefn.ol.epicgames.com/fortnite/api/cloudstorage/system/${cachedItem.uniqueFilename}`,
