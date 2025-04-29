@@ -20,6 +20,7 @@ const webhook2 = new WebhookClient({ url: process.env.BlogTracker as string })
 export async function sendBlogembed(body: BlogType) {
   const embed = new EmbedBuilder()
     .setTitle(body.gridTitle)
+    .setThumbnail(body.image)
     .setFields([
       {
         name: "Description:",
@@ -30,7 +31,7 @@ export async function sendBlogembed(body: BlogType) {
         value: body.urlPattern
       }
     ])
-    .setImage(body.image)
+    .setImage(body.sharedImage)
     .setColor('Random')
     .setTimestamp()
 

@@ -44,9 +44,10 @@ export async function GetBlogs() {
           NewIds.push({
             _id: e._id as string,
             image: e.image as string,
+            sharedImage: e.shareImage,
             gridTitle: e.title as string,
             urlPattern: `https://www.fortnite.com/news/${e.slug}`,
-            description: descriptionMatch[1],
+            description: descriptionMatch,
           });
         }
       });
@@ -96,6 +97,7 @@ export async function GetComBlogs() {
           _id: e._id as string,
           image: e.image as string,
           gridTitle: e.title as string,
+          sharedImage: e.shareImage,
           urlPattern: `https://www.fortnite.com/competitive/news/${e.slug}`,
           description: descriptionMatch,
         });
@@ -149,6 +151,7 @@ export async function GetCreateBlogs() {
         NewIds.push({
           _id: e._id as string,
           image: e.image as string,
+          sharedImage: e.shareImage,
           gridTitle: e.title as string,
           urlPattern: `https://create.fortnite.com/news/${e.slug}`,
           description: descriptionMatch,
