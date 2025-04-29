@@ -24,10 +24,10 @@ export async function FortniteTracker() {
 
   let GameVersionProds = [
     {
-        Name: "Prod",
-        URL: "https://fortnite-public-service-prod.ak.epicgames.com/fortnite/api/version"
+      Name: "Prod",
+      URL: "https://fortnite-public-service-prod.ak.epicgames.com/fortnite/api/version",
     },
-   // { removed...
+    // { removed...
     //    Name: "PlayTest",
     //    URL: "https://fortnite-public-service-devplaytest-prod12.ol.epicgames.com/fortnite/api/version"
     //},
@@ -36,52 +36,52 @@ export async function FortniteTracker() {
     //    URL: "https://fortnite-public-service-prod11.ol.epicgames.com/fortnite/api/version"
     //},
     {
-        Name: "ReleasePlayTest-Prod",
-        URL: "https://fortnite-public-service-releaseplaytest-prod.ol.epicgames.com/fortnite/api/version"
+      Name: "ReleasePlayTest-Prod",
+      URL: "https://fortnite-public-service-releaseplaytest-prod.ol.epicgames.com/fortnite/api/version",
     },
     {
-        Name: "LiveBroadcasting-Prod",
-        URL: "https://fortnite-public-service-livebroadcasting-prod.ol.epicgames.com/fortnite/api/version"
+      Name: "LiveBroadcasting-Prod",
+      URL: "https://fortnite-public-service-livebroadcasting-prod.ol.epicgames.com/fortnite/api/version",
     },
     {
-        Name: "PartnerStable-Prod",
-        URL: "https://fortnite-public-service-partnersstable-prod.ol.epicgames.com/fortnite/api/version"
+      Name: "PartnerStable-Prod",
+      URL: "https://fortnite-public-service-partnersstable-prod.ol.epicgames.com/fortnite/api/version",
     },
     {
-        Name: "Partners-Prod",
-        URL: "https://fortnite-public-service-partners-prod.ol.epicgames.com/fortnite/api/version"  
+      Name: "Partners-Prod",
+      URL: "https://fortnite-public-service-partners-prod.ol.epicgames.com/fortnite/api/version",
     },
     {
-        Name: "PartnerStable-Prod",
-        URL: "https://fortnite-public-service-partnersstable-prod.ol.epicgames.com/fortnite/api/version"
+      Name: "PartnerStable-Prod",
+      URL: "https://fortnite-public-service-partnersstable-prod.ol.epicgames.com/fortnite/api/version",
     },
     {
-        Name: "DevPlayTestJ-Prod",
-        URL: "https://fortnite-public-service-devplaytestj-prod.ol.epicgames.com/fortnite/api/version" // fngw-mcp-gc-devplaytestj-prod.ol.epicgames.com, 
+      Name: "DevPlayTestJ-Prod",
+      URL: "https://fortnite-public-service-devplaytestj-prod.ol.epicgames.com/fortnite/api/version", // fngw-mcp-gc-devplaytestj-prod.ol.epicgames.com,
     },
     {
-        Name: "BacchusPlayTest-Prod",
-        URL: "https://fortnite-public-service-bacchusplaytest-prod.ol.epicgames.com/fortnite/api/version"
+      Name: "BacchusPlayTest-Prod",
+      URL: "https://fortnite-public-service-bacchusplaytest-prod.ol.epicgames.com/fortnite/api/version",
     },
     {
-        Name: "LoadTest-Prod",
-        URL: "https://fngw-mcp-ds-loadtest-prod.ol.epicgames.com/fortnite/api/version"
+      Name: "LoadTest-Prod",
+      URL: "https://fngw-mcp-ds-loadtest-prod.ol.epicgames.com/fortnite/api/version",
     },
     {
-        Name: "PublicTest-Prod",
-        URL: "https://fngw-mcp-gc-publictest-prod.ol.epicgames.com/fortnite/api/version" // useless from the cln and build ~ fortnite-public-service-publictest-prod.ol.epicgames.com ~ fortnite-public-service-extqauetestingb-prod.ol.epicgames.com
+      Name: "PublicTest-Prod",
+      URL: "https://fngw-mcp-gc-publictest-prod.ol.epicgames.com/fortnite/api/version", // useless from the cln and build ~ fortnite-public-service-publictest-prod.ol.epicgames.com ~ fortnite-public-service-extqauetestingb-prod.ol.epicgames.com
     }, // ^^ i dont want to have it updating  being useless
     {
-        Name: "Floss-Prod",
-        URL: "https://fortnite-public-service-floss-prod.ol.epicgames.com/fortnite/api/version" 
+      Name: "Floss-Prod",
+      URL: "https://fortnite-public-service-floss-prod.ol.epicgames.com/fortnite/api/version",
     },
     {
-        Name: "Floss-Prod",
-        URL: "https://fortnite-public-service-floss-prod.ol.epicgames.com/fortnite/api/version"  // pretty useless i need to test run this
+      Name: "Floss-Prod",
+      URL: "https://fortnite-public-service-floss-prod.ol.epicgames.com/fortnite/api/version", // pretty useless i need to test run this
     },
     {
-        Name: "Floss-Prod",
-        URL: "https://fortnite-public-service-floss-prod.ol.epicgames.com/fortnite/api/version" 
+      Name: "Floss-Prod",
+      URL: "https://fortnite-public-service-floss-prod.ol.epicgames.com/fortnite/api/version",
     },
   ];
   //devplaytestj
@@ -98,9 +98,7 @@ export async function FortniteTracker() {
     if (res.data) {
       const currentData = res.data as GameVersionData;
       if (existsSync(`cached/${e.Name}`)) {
-        var FrfrFile = JSON.parse(
-          readFileSync(`cached/${e.Name}`, "utf-8")
-        );
+        var FrfrFile = JSON.parse(readFileSync(`cached/${e.Name}`, "utf-8"));
 
         console.log(FrfrFile.cln);
 
@@ -144,7 +142,7 @@ export async function FortniteTracker() {
                 {
                   name: change.field,
                   value: `~~${change.oldValue}~~\n${change.newValue}`,
-                  inline: true
+                  inline: true,
                 },
               ]);
             });
@@ -154,10 +152,7 @@ export async function FortniteTracker() {
         }
       }
 
-      writeFileSync(
-        path.join("cached", e.Name),
-        JSON.stringify(res.data)
-      );
+      writeFileSync(path.join("cached", e.Name), JSON.stringify(res.data));
     }
   });
 }

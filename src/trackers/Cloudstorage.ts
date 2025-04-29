@@ -264,128 +264,130 @@ export async function FortniteCloudStorage() {
           );
 
           if (cachedItem) {
-            if(!cachedItem.filename.includes(".json"))
-            if (cachedItem.uploaded != newData.uploaded) {
-              console.log("YE~ " + JSON.stringify(cachedItem));
-              
-              // const cachedPath = path.join("cached", cachedItem.uniqueFilename);
-              const res = await axios.get(
-                `https://fngw-mcp-gc-livefn.ol.epicgames.com/fortnite/api/cloudstorage/system/${cachedItem.uniqueFilename}`,
-                {
-                  headers: {
-                    // why a user agent, epic games returns a 403 without one
-                    "User-Agent":
-                      "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123 Safari/537.36",
-                    Authorization: `bearer ${grabauth}`,
-                  },
-                }
-              );
+            if (!cachedItem.filename.includes(".json"))
+              if (cachedItem.uploaded != newData.uploaded) {
+                console.log("YE~ " + JSON.stringify(cachedItem));
 
-              if (res.data) {
-                var DataChanged = await diffFile(
-                  path.join("cached", cachedItem.uniqueFilename),
-                  res.data
+                // const cachedPath = path.join("cached", cachedItem.uniqueFilename);
+                const res = await axios.get(
+                  `https://fngw-mcp-gc-livefn.ol.epicgames.com/fortnite/api/cloudstorage/system/${cachedItem.uniqueFilename}`,
+                  {
+                    headers: {
+                      // why a user agent, epic games returns a 403 without one
+                      "User-Agent":
+                        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123 Safari/537.36",
+                      Authorization: `bearer ${grabauth}`,
+                    },
+                  }
                 );
 
-                if (DataChanged) {
-                  var EmbedMessages: EmbedBuilder[] = [];
-
-                  if (Object.keys(modifications).length > 0) {
-                    const embed = new EmbedBuilder()
-                      .setColor("Random")
-                      .setTitle("CurveTable modification detected")
-                      .setTimestamp();
-
-                    Object.keys(modifications).forEach((dataTable) => {
-                      embed.setDescription("Changed data: " + dataTable);
-                      const data = modifications[dataTable];
-
-                      Object.keys(data).forEach((property) => {
-                        embed.addFields([
-                          {
-                            name: property,
-                            value: data[property],
-                          },
-                        ]);
-                      });
-                    });
-
-                    EmbedMessages.push(embed);
-                  }
-
-                  if (Object.keys(modificationsDataTable).length > 0) {
-                    const embed2 = new EmbedBuilder()
-                      .setColor("Random")
-                      .setTitle("DataTable modification detected")
-                      .setTimestamp();
-
-                    Object.keys(modificationsDataTable).forEach((dataTable) => {
-                      embed2.setDescription("Changed data: " + dataTable);
-                      const data = modificationsDataTable[dataTable];
-
-                      Object.keys(data).forEach((property) => {
-                        embed2.addFields([
-                          {
-                            name: property,
-                            value: data[property],
-                          },
-                        ]);
-                      });
-                    });
-
-                    EmbedMessages.push(embed2);
-                  }
-
-                  if (Object.keys(textChanges).length > 0) {
-                    const embed2 = new EmbedBuilder()
-                      .setColor("Random")
-                      .setTitle("String modification detected")
-                      .setTimestamp();
-
-                    Object.keys(textChanges).forEach((KEY) => {
-                      const data = textChanges[KEY];
-                      if (data.OLDString.trim() === "")
-                        data.OLDString = data.NativateString;
-
-                      var FRFR = `~~${data.OLDString}~~ \n${data.NewString}`;
-                      embed2.addFields([
-                        {
-                          name: KEY,
-                          value: FRFR,
-                        },
-                      ]);
-                    });
-
-                    EmbedMessages.push(embed2);
-                  }
-
-                  if (DataChanged.length > 1900) {
-                    const buffer = Buffer.from(DataChanged, "utf8");
-                    const attachment = new AttachmentBuilder(buffer, {
-                      name: `${cachedItem.filename}.diff`,
-                    });
-
-                    await webhook.send({
-                      content: `${cachedItem.filename} has been updated!`,
-                      files: [attachment],
-                      embeds: EmbedMessages,
-                    });
-                  } else {
-                    if (DataChanged.trim() !== "") {
-                      await webhook.send({
-                        content: `${cachedItem.filename} has been updated! \n\`\`\`diff\n${DataChanged}\n\`\`\``,
-                        embeds: EmbedMessages,
-                      });
-                    }
-                  }
-
-                  writeFileSync(
+                if (res.data) {
+                  var DataChanged = await diffFile(
                     path.join("cached", cachedItem.uniqueFilename),
                     res.data
                   );
+
+                  if (DataChanged) {
+                    var EmbedMessages: EmbedBuilder[] = [];
+
+                    if (Object.keys(modifications).length > 0) {
+                      const embed = new EmbedBuilder()
+                        .setColor("Random")
+                        .setTitle("CurveTable modification detected")
+                        .setTimestamp();
+
+                      Object.keys(modifications).forEach((dataTable) => {
+                        embed.setDescription("Changed data: " + dataTable);
+                        const data = modifications[dataTable];
+
+                        Object.keys(data).forEach((property) => {
+                          embed.addFields([
+                            {
+                              name: property,
+                              value: data[property],
+                            },
+                          ]);
+                        });
+                      });
+
+                      EmbedMessages.push(embed);
+                    }
+
+                    if (Object.keys(modificationsDataTable).length > 0) {
+                      const embed2 = new EmbedBuilder()
+                        .setColor("Random")
+                        .setTitle("DataTable modification detected")
+                        .setTimestamp();
+
+                      Object.keys(modificationsDataTable).forEach(
+                        (dataTable) => {
+                          embed2.setDescription("Changed data: " + dataTable);
+                          const data = modificationsDataTable[dataTable];
+
+                          Object.keys(data).forEach((property) => {
+                            embed2.addFields([
+                              {
+                                name: property,
+                                value: data[property],
+                              },
+                            ]);
+                          });
+                        }
+                      );
+
+                      EmbedMessages.push(embed2);
+                    }
+
+                    if (Object.keys(textChanges).length > 0) {
+                      const embed2 = new EmbedBuilder()
+                        .setColor("Random")
+                        .setTitle("String modification detected")
+                        .setTimestamp();
+
+                      Object.keys(textChanges).forEach((KEY) => {
+                        const data = textChanges[KEY];
+                        if (data.OLDString.trim() === "")
+                          data.OLDString = data.NativateString;
+
+                        var FRFR = `~~${data.OLDString}~~ \n${data.NewString}`;
+                        embed2.addFields([
+                          {
+                            name: KEY,
+                            value: FRFR,
+                          },
+                        ]);
+                      });
+
+                      EmbedMessages.push(embed2);
+                    }
+
+                    if (DataChanged.length > 1900) {
+                      const buffer = Buffer.from(DataChanged, "utf8");
+                      const attachment = new AttachmentBuilder(buffer, {
+                        name: `${cachedItem.filename}.diff`,
+                      });
+
+                      await webhook.send({
+                        content: `${cachedItem.filename} has been updated!`,
+                        files: [attachment],
+                        embeds: EmbedMessages,
+                      });
+                    } else {
+                      if (DataChanged.trim() !== "") {
+                        await webhook.send({
+                          content: `${cachedItem.filename} has been updated! \n\`\`\`diff\n${DataChanged}\n\`\`\``,
+                          embeds: EmbedMessages,
+                        });
+                      }
+                    }
+
+                    writeFileSync(
+                      path.join("cached", cachedItem.uniqueFilename),
+                      res.data
+                    );
+                  }
                 }
               }
-            }
           } else {
             // cant find the file? create it
             const cachedPath = path.join("cached", newData.uniqueFilename);

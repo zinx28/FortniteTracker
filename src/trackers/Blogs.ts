@@ -29,31 +29,31 @@ export async function GetBlogs() {
 
     var BlogsList = rawTexxt.blogList;
 
-      if (BlogsList) {
-        const IDList: string[] = [];
-        const NewIds: BlogType[] = [];
+    if (BlogsList) {
+      const IDList: string[] = [];
+      const NewIds: BlogType[] = [];
 
-        (BlogsList as any[]).forEach((e) => {
-          IDList.push(e._id as string);
-          if (!cachedBlogs.find((e3) => e3 === (e._id as string))) {
-            const descriptionMatch = e._metaTags
-              ? e._metaTags.match(
-                  /<meta\s+name="description"\s+content="(.*?)">/
-                )[1]
-              : "";
-            NewIds.push({
-              _id: e._id as string,
-              image: e.image as string,
-              gridTitle: e.title as string,
-              urlPattern: `https://www.fortnite.com/news/${e.slug}`,
-              description: descriptionMatch[1],
-            });
-          }
-        });
+      (BlogsList as any[]).forEach((e) => {
+        IDList.push(e._id as string);
+        if (!cachedBlogs.find((e3) => e3 === (e._id as string))) {
+          const descriptionMatch = e._metaTags
+            ? e._metaTags.match(
+                /<meta\s+name="description"\s+content="(.*?)">/
+              )[1]
+            : "";
+          NewIds.push({
+            _id: e._id as string,
+            image: e.image as string,
+            gridTitle: e.title as string,
+            urlPattern: `https://www.fortnite.com/news/${e.slug}`,
+            description: descriptionMatch[1],
+          });
+        }
+      });
 
-        saveIDBlogs(IDList);
-        saveNewLinksBlogs(NewIds);
-      }
+      saveIDBlogs(IDList);
+      saveNewLinksBlogs(NewIds);
+    }
   } catch (err) {
     console.error(err);
   }

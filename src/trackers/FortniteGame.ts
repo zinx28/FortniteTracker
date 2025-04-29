@@ -22,7 +22,8 @@ export async function FortniteGame() {
   }
 }
 
-export async function JustGrabLinskFromBP() { // imma disable this for now.... enable if you want but cloudflare will say "hey stop bot" and nothing you can realylk do~
+export async function JustGrabLinskFromBP() {
+  // imma disable this for now.... enable if you want but cloudflare will say "hey stop bot" and nothing you can realylk do~
   try {
     /*const rawTexxt = await fetchText(
       "https://www.fortnite.com/battle-pass?lang=en-US&_data=routes%2Fbattle-pass._index"

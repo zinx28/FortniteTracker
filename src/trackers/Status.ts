@@ -39,8 +39,8 @@ export async function FortniteStatus() {
           },
           {
             name: "Message",
-            value: res.data[0].message
-          }
+            value: res.data[0].message,
+          },
         ])
         .setColor("Random")
         .setTimestamp();

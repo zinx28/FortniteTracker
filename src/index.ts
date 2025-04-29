@@ -17,6 +17,7 @@ import { KeyChain } from "./trackers/Keychain";
 import { VerifyGenerateUserAuth } from "./utils/GenerateAuth";
 import { NewsChecker } from "./trackers/NewsChecks";
 import { ClearALLNEWCACHEDNewssIds, loadNewsCachedLinks } from "./utils/newsCache";
+import { TimelineTracker } from "./trackers/Flags";
 dotenv.config();
 var ShouldGenerate = false;
 
@@ -53,6 +54,7 @@ async function FetchAllThings() {
   // due to it not hjaving storefront read and more i cant be bothered, needs to be a realk user
   if (ShouldGenerate) {
     // depends if token is even vaild
+    TimelineTracker();
     KeyChain();
     NewsChecker();
   } else console.log("Disabled due to invaild auth!");
