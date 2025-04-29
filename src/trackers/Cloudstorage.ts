@@ -108,7 +108,7 @@ export async function diffFile(
             modifications[dataTable] = {};
           }
 
-          modifications[dataTable][prop2] = prop3;
+          modifications[dataTable][prop2] = value;
         } else {
           match = line.match(
             /^\+\s*DataTable=([^;]+);([^;]+);([^;]+);([^;]+);([^;]+)$/
