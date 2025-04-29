@@ -1,8 +1,8 @@
 import fs from "fs";
 
-export function loadCachedBlogs(): string[] {
+export function loadCachedTournaments(): string[] {
   // save the id instead
-  const filePath = "cached/blogs.json";
+  const filePath = "cached/tournaments.json";
 
   if (!fs.existsSync("cached")) {
     fs.mkdirSync("cached");
@@ -28,8 +28,8 @@ export function loadCachedBlogs(): string[] {
 
 */
 
-export function loadBlogsCachedLinks(): BlogType[] {
-  const filePath = "cached/blogs-new.json";
+export function loadTournamentCachedLinks(): TournamentType[] {
+  const filePath = "cached/tournaments-new.json";
 
   if (!fs.existsSync("cached")) {
     fs.mkdirSync("cached");
@@ -43,31 +43,31 @@ export function loadBlogsCachedLinks(): BlogType[] {
   return [];
 }
 
-export function ClearALLNEWCACHEDBlogsIds() {
-  const filePath = "cached/blogs-new.json";
+export function ClearALLNEWCACHEDTournamentIds() {
+  const filePath = "cached/tournaments-new.json";
   fs.writeFileSync(filePath, "[]");
 }
 
 // apend instead of overwriting
-export function saveIDBlogs(links: string[]) {
-  const filePath = "cached/blogs.json";
-  const existing = loadCachedBlogs();
+export function saveIDTournament(links: string[]) {
+  const filePath = "cached/tournaments.json";
+  const existing = loadCachedTournaments();
   const merged = Array.from(new Set([...existing, ...links]));
   fs.writeFileSync(filePath, JSON.stringify(merged, null, 2));
 }
 
-export type BlogType = {
+export type TournamentType = {
   _id: string;
   image: string;
   sharedImage: string;
   gridTitle: string;
-  urlPattern: string;
   description: string; // find to grab, LEWGIT WIERD AS PARSING
+  embedColor: string;
 };
 
-export function saveNewLinksBlogs(links: BlogType[]) {
-  const filePath = "cached/blogs-new.json";
-  const existing = loadBlogsCachedLinks();
+export function saveNewLinksTournament(links: TournamentType[]) {
+  const filePath = "cached/tournaments-new.json";
+  const existing = loadTournamentCachedLinks();
   const merged = Array.from(new Set([...existing, ...links]));
   fs.writeFileSync(filePath, JSON.stringify(merged, null, 2));
 }

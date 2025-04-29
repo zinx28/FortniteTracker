@@ -5,7 +5,7 @@ import {
   ClearALLNEWCACHEDLINMKS,
   loadNewCachedLinks,
 } from "./utils/cachedData";
-import { sendBlogembed, sendImageEmbed, sendNewsembed } from "./utils/discordWeb";
+import { sendBlogembed, sendImageEmbed, sendNewsembed, sendTournamentEmebed } from "./utils/discordWeb";
 import { FortniteStatus } from "./trackers/Status";
 import {
   ClearALLNEWCACHEDBlogsIds,
@@ -18,6 +18,7 @@ import { VerifyGenerateUserAuth } from "./utils/GenerateAuth";
 import { NewsChecker } from "./trackers/NewsChecks";
 import { ClearALLNEWCACHEDNewssIds, loadNewsCachedLinks } from "./utils/newsCache";
 import { TimelineTracker } from "./trackers/Flags";
+import { ClearALLNEWCACHEDTournamentIds, loadTournamentCachedLinks } from "./utils/tournamentsCache";
 dotenv.config();
 var ShouldGenerate = false;
 
@@ -46,6 +47,13 @@ async function DiscordWebhookt() {
   AllNews.forEach((e) => {
     sendNewsembed(e);
   });
+
+  var AllTournaments = loadTournamentCachedLinks();
+  ClearALLNEWCACHEDTournamentIds();
+
+  AllTournaments.forEach((e) => {
+    sendTournamentEmebed(e);
+  });
 }
 
 async function FetchAllThings() {
@@ -61,7 +69,7 @@ async function FetchAllThings() {
 
   // under some use auth and some not but not user based
 
-  FortniteTracker();
+  //FortniteTracker();
   FortniteCloudStorage();
   JustGrabLinskFromBP();
   FortniteStatus(); //~ doesnt need a auth but not removing

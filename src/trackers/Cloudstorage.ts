@@ -238,158 +238,187 @@ type CloudStorageFiles = {
 };
 
 export async function FortniteCloudStorage() {
-  console.log("HUY");
-  const grabauth = await GenerateAuth();
-  console.log(grabauth);
+  try {
+    console.log("HUY");
+    const grabauth = await GenerateAuth();
+    console.log(grabauth);
 
-  const res = await axios.get(
-    "https://fngw-mcp-gc-livefn.ol.epicgames.com/fortnite/api/cloudstorage/system",
-    {
-      headers: {
-        // why a user agent, epic games returns a 403 without one
-        "User-Agent":
-          "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123 Safari/537.36",
-        Authorization: `bearer ${grabauth}`,
-      },
-    }
-  );
+    const res = await axios.get(
+      "https://fngw-mcp-gc-livefn.ol.epicgames.com/fortnite/api/cloudstorage/system",
+      {
+        headers: {
+          // why a user agent, epic games returns a 403 without one
+          "User-Agent":
+            "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123 Safari/537.36",
+          Authorization: `bearer ${grabauth}`,
+        },
+      }
+    );
 
-  if (res.data) {
-    if (Array.isArray(res.data)) {
-      const cachedData = loadCache();
-      if (cachedData.length > 0) {
-        res.data.forEach(async (newData) => {
-          const cachedItem = cachedData.find(
-            (item) => item.uniqueFilename === newData.uniqueFilename
-          );
+    if (res.data) {
+      if (Array.isArray(res.data)) {
+        const cachedData = loadCache();
+        if (cachedData.length > 0) {
+          res.data.forEach(async (newData) => {
+            const cachedItem = cachedData.find(
+              (item) => item.uniqueFilename === newData.uniqueFilename
+            );
 
-          if (cachedItem) {
-            if (!cachedItem.filename.includes(".json"))
-              if (cachedItem.uploaded != newData.uploaded) {
-                console.log("YE~ " + JSON.stringify(cachedItem));
+            if (cachedItem) {
+              if (!cachedItem.filename.includes(".json"))
+                if (cachedItem.uploaded != newData.uploaded) {
+                  console.log("YE~ " + JSON.stringify(cachedItem));
 
-                // const cachedPath = path.join("cached", cachedItem.uniqueFilename);
-                const res = await axios.get(
-                  `https://fngw-mcp-gc-livefn.ol.epicgames.com/fortnite/api/cloudstorage/system/${cachedItem.uniqueFilename}`,
-                  {
-                    headers: {
-                      // why a user agent, epic games returns a 403 without one
-                      "User-Agent":
-                        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123 Safari/537.36",
-                      Authorization: `bearer ${grabauth}`,
-                    },
-                  }
-                );
-
-                if (res.data) {
-                  var DataChanged = await diffFile(
-                    path.join("cached", cachedItem.uniqueFilename),
-                    res.data
+                  // const cachedPath = path.join("cached", cachedItem.uniqueFilename);
+                  const res = await axios.get(
+                    `https://fngw-mcp-gc-livefn.ol.epicgames.com/fortnite/api/cloudstorage/system/${cachedItem.uniqueFilename}`,
+                    {
+                      headers: {
+                        // why a user agent, epic games returns a 403 without one
+                        "User-Agent":
+                          "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123 Safari/537.36",
+                        Authorization: `bearer ${grabauth}`,
+                      },
+                    }
                   );
 
-                  if (DataChanged) {
-                    var EmbedMessages: EmbedBuilder[] = [];
+                  if (res.data) {
+                    var DataChanged = await diffFile(
+                      path.join("cached", cachedItem.uniqueFilename),
+                      res.data
+                    );
 
-                    if (Object.keys(modifications).length > 0) {
-                      const embed = new EmbedBuilder()
-                        .setColor("Random")
-                        .setTitle("CurveTable modification detected")
-                        .setTimestamp();
+                    if (DataChanged) {
+                      var EmbedMessages: EmbedBuilder[] = [];
 
-                      Object.keys(modifications).forEach((dataTable) => {
-                        embed.setDescription("Changed data: " + dataTable);
-                        const data = modifications[dataTable];
+                      if (Object.keys(modifications).length > 0) {
+                        const embed = new EmbedBuilder()
+                          .setColor("Random")
+                          .setTitle("CurveTable modification detected")
+                          .setTimestamp();
 
-                        Object.keys(data).forEach((property) => {
-                          embed.addFields([
-                            {
-                              name: property,
-                              value: data[property],
-                            },
-                          ]);
-                        });
-                      });
-
-                      EmbedMessages.push(embed);
-                    }
-
-                    if (Object.keys(modificationsDataTable).length > 0) {
-                      const embed2 = new EmbedBuilder()
-                        .setColor("Random")
-                        .setTitle("DataTable modification detected")
-                        .setTimestamp();
-
-                      Object.keys(modificationsDataTable).forEach(
-                        (dataTable) => {
-                          embed2.setDescription("Changed data: " + dataTable);
-                          const data = modificationsDataTable[dataTable];
+                        Object.keys(modifications).forEach((dataTable) => {
+                          embed.setDescription("Changed data: " + dataTable);
+                          const data = modifications[dataTable];
 
                           Object.keys(data).forEach((property) => {
-                            embed2.addFields([
+                            embed.addFields([
                               {
                                 name: property,
                                 value: data[property],
                               },
                             ]);
                           });
-                        }
-                      );
+                        });
 
-                      EmbedMessages.push(embed2);
-                    }
+                        EmbedMessages.push(embed);
+                      }
 
-                    if (Object.keys(textChanges).length > 0) {
-                      const embed2 = new EmbedBuilder()
-                        .setColor("Random")
-                        .setTitle("String modification detected")
-                        .setTimestamp();
+                      if (Object.keys(modificationsDataTable).length > 0) {
+                        const embed2 = new EmbedBuilder()
+                          .setColor("Random")
+                          .setTitle("DataTable modification detected")
+                          .setTimestamp();
 
-                      Object.keys(textChanges).forEach((KEY) => {
-                        const data = textChanges[KEY];
-                        if (data.OLDString.trim() === "")
-                          data.OLDString = data.NativateString;
+                        Object.keys(modificationsDataTable).forEach(
+                          (dataTable) => {
+                            embed2.setDescription("Changed data: " + dataTable);
+                            const data = modificationsDataTable[dataTable];
 
-                        var FRFR = `~~${data.OLDString}~~ \n${data.NewString}`;
-                        embed2.addFields([
-                          {
-                            name: KEY,
-                            value: FRFR,
-                          },
-                        ]);
-                      });
+                            Object.keys(data).forEach((property) => {
+                              embed2.addFields([
+                                {
+                                  name: property,
+                                  value: data[property],
+                                },
+                              ]);
+                            });
+                          }
+                        );
 
-                      EmbedMessages.push(embed2);
-                    }
+                        EmbedMessages.push(embed2);
+                      }
 
-                    if (DataChanged.length > 1900) {
-                      const buffer = Buffer.from(DataChanged, "utf8");
-                      const attachment = new AttachmentBuilder(buffer, {
-                        name: `${cachedItem.filename}.diff`,
-                      });
+                      if (Object.keys(textChanges).length > 0) {
+                        const embed2 = new EmbedBuilder()
+                          .setColor("Random")
+                          .setTitle("String modification detected")
+                          .setTimestamp();
 
-                      await webhook.send({
-                        content: `${cachedItem.filename} has been updated!`,
-                        files: [attachment],
-                        embeds: EmbedMessages,
-                      });
-                    } else {
-                      if (DataChanged.trim() !== "") {
+                        Object.keys(textChanges).forEach((KEY) => {
+                          const data = textChanges[KEY];
+                          if (data.OLDString.trim() === "")
+                            data.OLDString = data.NativateString;
+
+                          var FRFR = `~~${data.OLDString}~~ \n${data.NewString}`;
+                          embed2.addFields([
+                            {
+                              name: KEY,
+                              value: FRFR,
+                            },
+                          ]);
+                        });
+
+                        EmbedMessages.push(embed2);
+                      }
+
+                      if (DataChanged.length > 1900) {
+                        const buffer = Buffer.from(DataChanged, "utf8");
+                        const attachment = new AttachmentBuilder(buffer, {
+                          name: `${cachedItem.filename}.diff`,
+                        });
+
                         await webhook.send({
-                          content: `${cachedItem.filename} has been updated! \n\`\`\`diff\n${DataChanged}\n\`\`\``,
+                          content: `${cachedItem.filename} has been updated!`,
+                          files: [attachment],
                           embeds: EmbedMessages,
                         });
+                      } else {
+                        if (DataChanged.trim() !== "") {
+                          await webhook.send({
+                            content: `${cachedItem.filename} has been updated! \n\`\`\`diff\n${DataChanged}\n\`\`\``,
+                            embeds: EmbedMessages,
+                          });
+                        }
                       }
-                    }
 
-                    writeFileSync(
-                      path.join("cached", cachedItem.uniqueFilename),
-                      res.data
-                    );
+                      writeFileSync(
+                        path.join("cached", cachedItem.uniqueFilename),
+                        res.data
+                      );
+                    }
                   }
                 }
-              }
-          } else {
-            // cant find the file? create it
+            } else {
+              // cant find the file? create it
+              const cachedPath = path.join("cached", newData.uniqueFilename);
+              const res = await axios.get(
+                `https://fngw-mcp-gc-livefn.ol.epicgames.com/fortnite/api/cloudstorage/system/${newData.uniqueFilename}`,
+                {
+                  headers: {
+                    // why a user agent, epic games returns a 403 without one
+                    "User-Agent":
+                      "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123 Safari/537.36",
+                    Authorization: `bearer ${grabauth}`,
+                  },
+                }
+              );
+
+              if (res.data) writeFileSync(cachedPath, res.data);
+
+              // todo send to discord
+            }
+
+            //if (cachedItem.uploaded !== newData.uploaded) {
+            //   filesn;
+            //}
+
+            //if (!cachedItem || cachedItem.uploaded !== newData.uploaded) {
+            //  cachedData.push(newData);
+            // }
+          });
+        } else {
+          res.data.forEach(async (newData) => {
             const cachedPath = path.join("cached", newData.uniqueFilename);
             const res = await axios.get(
               `https://fngw-mcp-gc-livefn.ol.epicgames.com/fortnite/api/cloudstorage/system/${newData.uniqueFilename}`,
@@ -404,39 +433,14 @@ export async function FortniteCloudStorage() {
             );
 
             if (res.data) writeFileSync(cachedPath, res.data);
+          });
+        }
 
-            // todo send to discord
-          }
-
-          //if (cachedItem.uploaded !== newData.uploaded) {
-          //   filesn;
-          //}
-
-          //if (!cachedItem || cachedItem.uploaded !== newData.uploaded) {
-          //  cachedData.push(newData);
-          // }
-        });
-      } else {
-        res.data.forEach(async (newData) => {
-          const cachedPath = path.join("cached", newData.uniqueFilename);
-          const res = await axios.get(
-            `https://fngw-mcp-gc-livefn.ol.epicgames.com/fortnite/api/cloudstorage/system/${newData.uniqueFilename}`,
-            {
-              headers: {
-                // why a user agent, epic games returns a 403 without one
-                "User-Agent":
-                  "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123 Safari/537.36",
-                Authorization: `bearer ${grabauth}`,
-              },
-            }
-          );
-
-          if (res.data) writeFileSync(cachedPath, res.data);
-        });
+        saveCache(JSON.stringify(res.data));
       }
-
-      saveCache(JSON.stringify(res.data));
     }
+  } catch (error) {
+    console.log(error);
   }
 }
 
