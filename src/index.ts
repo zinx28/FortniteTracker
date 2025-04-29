@@ -69,7 +69,7 @@ async function FetchAllThings() {
 
   // under some use auth and some not but not user based
 
-  //FortniteTracker();
+  FortniteTracker();
   FortniteCloudStorage();
   JustGrabLinskFromBP();
   FortniteStatus(); //~ doesnt need a auth but not removing
