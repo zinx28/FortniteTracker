@@ -131,7 +131,7 @@ export async function NewsChecker() {
               IDList.push(e.contentHash as string);
 
               const websiteLink =
-                (
+              e.contentFields.Buttons ? (
                   e.contentFields.Buttons as {
                     Action: { _type: string; websiteUrl?: string };
                   }[]
@@ -139,7 +139,7 @@ export async function NewsChecker() {
                   .filter(
                     (button) => button.Action._type === "MotdWebsiteAction"
                   )
-                  .map((button) => button.Action.websiteUrl)[0] || null;
+                  .map((button) => button.Action.websiteUrl)[0] || null : null;
 
               NewIds.push({
                 _id: e.contentHash as string,
