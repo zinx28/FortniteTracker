@@ -37,6 +37,7 @@ Fort.Rollback.UseEnhancedInputForMotorcycles=0
 Pilgrim.EnableProton=0
 SkinWeightProfileManager.SkipLODWithoutDataOrStreamingRequest=0
 Fort.Rollback.AllowSpriteSwap=0
+Athena.BrokenPawnReplication.IrisDebugLogCount=1
 [OnlineSubsystemMcp.OnlineDiscoveryServiceMcp]
 bEnableAccessTokenAuthentication=true
 [OnlineSubsystemMcp.OnlineDiscoveryServiceMcp Fortnite]

@@ -147,7 +147,7 @@ export async function FortniteTracker() {
                   },
                 ]);
               });
-
+            
               webhook.send({ embeds: [embed] });
             }
           }

@@ -21,6 +21,7 @@ export function findAllActiveEvents(obj: JSONValue): any[][] {
         if (key === "activeEvents" && Array.isArray(value)) {
           const LetmesimponyouEvents = value
             .filter((e: any) => e.instanceId == null) // theres like client events with this, no point tracking
+            .filter((e: any) => !e.eventType.includes("PilgrimSong") && !e.eventType.includes("Sparks.Spotlight"))
             .map((event: any) => ({
               eventType: event.eventType,
               activeUntil: event.activeUntil,

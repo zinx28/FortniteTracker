@@ -137,7 +137,11 @@ export async function TimelineTracker() {
           Embed.push(embed2);
         });
 
-        if (Embed.length > 0) await webhook.send({ embeds: Embed });
+        if (Embed.length > 0)
+          for (let i = 0; i < Embed.length; i += 10) {
+            const chunk = Embed.slice(i, i + 10);
+            await webhook.send({ embeds: chunk });
+          }
         //console.log(await findAllActiveEvents(res.data));
       }
       saveCache(FindAllActiveEvents);
