@@ -121,7 +121,8 @@ export async function TimelineTracker() {
               },
               {
                 name: "End Date",
-                value: element.oldActiveUntil
+                value: element.oldActiveUntil &&
+                element.oldActiveUntil !== element.newActiveUntil
                   ? `~~${toDiscordTimestamp(
                       element.oldActiveUntil
                     )}~~ ➜ ${toDiscordTimestamp(element.newActiveUntil)}`
