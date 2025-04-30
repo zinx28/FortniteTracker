@@ -24,7 +24,11 @@ export function loadNewsCachedLinks(): NewsType[] {
   }
 
   if (fs.existsSync(filePath)) {
-    return JSON.parse(fs.readFileSync(filePath, "utf8"));
+    const content = fs.readFileSync(filePath, "utf8");
+    try {
+      const parsed = JSON.parse(content);
+      if (Array.isArray(parsed)) return parsed;
+    } catch {}
   }
 
   fs.writeFileSync(filePath, "[]");
