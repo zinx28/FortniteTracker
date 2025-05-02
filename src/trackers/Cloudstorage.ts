@@ -6,7 +6,12 @@
 import axios from "axios";
 import { GenerateAuth } from "../utils/GenerateAuth";
 import { existsSync, readFileSync, writeFileSync } from "fs";
-import { WebhookClient, EmbedBuilder, AttachmentBuilder } from "discord.js";
+import {
+  WebhookClient,
+  EmbedBuilder,
+  AttachmentBuilder,
+  type EmbedField,
+} from "discord.js";
 import path from "path";
 var modifications: Record<string, Record<string, string>> = {};
 type TextChanges = {
@@ -130,8 +135,9 @@ export async function diffFile(
             modificationsDataTable[dataTable][prop2] = newValue;
           } else {
             match = line.match(
-              /^\+TextReplacements=\(Category=([^,]+), Namespace="([^"]*)", bIsMinimalPatch=[^,]+, Key="([^"]+)", NativeString="([^"]+)", LocalizedStrings=\((.*)\)\)$/
+              /^\+TextReplacements=\(\s*Category=([^,]+),\s*Namespace="([^"]*)",\s*(?:bIsMinimalPatch=[^,]+,\s*)?Key="([^"]+)",\s*NativeString="([^"]+)",\s*LocalizedStrings=\((.*)\)\)$/
             );
+            
 
             if (match) {
               console.log(match);
@@ -158,13 +164,16 @@ export async function diffFile(
                 var StringFr = "";
                 if (nativeString != englishText) {
                   StringFr = nativeString;
-                }
+                } else StringFr = "";
 
                 textChanges[key] = {
                   NewString: englishText,
                   NativateString: StringFr,
                   OLDString: "",
                 };
+              } else {
+                // this doesnt have a english string so we just delete this part
+                delete textChanges[key];
               }
             }
           }
@@ -296,22 +305,27 @@ export async function FortniteCloudStorage() {
                           .setColor("Random")
                           .setTitle("CurveTable modification detected")
                           .setTimestamp();
+                        let arrayTest: EmbedField[] = [];
 
                         Object.keys(modifications).forEach((dataTable) => {
                           embed.setDescription("Changed data: " + dataTable);
                           const data = modifications[dataTable];
 
                           Object.keys(data).forEach((property) => {
-                            embed.addFields([
-                              {
-                                name: property,
-                                value: data[property],
-                              },
-                            ]);
+                            arrayTest.push({
+                              name: property,
+                              value: data[property],
+                              inline: false,
+                            });
                           });
                         });
 
-                        EmbedMessages.push(embed);
+                        if (arrayTest.length > 0)
+                          for (let i = 0; i < arrayTest.length; i += 10) {
+                            const chunk = arrayTest.slice(i, i + 10);
+                            embed.setFields(chunk);
+                            EmbedMessages.push(embed);
+                          }
                       }
 
                       if (Object.keys(modificationsDataTable).length > 0) {
@@ -319,6 +333,7 @@ export async function FortniteCloudStorage() {
                           .setColor("Random")
                           .setTitle("DataTable modification detected")
                           .setTimestamp();
+                        let arrayTest: EmbedField[] = [];
 
                         Object.keys(modificationsDataTable).forEach(
                           (dataTable) => {
@@ -326,17 +341,21 @@ export async function FortniteCloudStorage() {
                             const data = modificationsDataTable[dataTable];
 
                             Object.keys(data).forEach((property) => {
-                              embed2.addFields([
-                                {
-                                  name: property,
-                                  value: data[property],
-                                },
-                              ]);
+                              arrayTest.push({
+                                name: property,
+                                value: data[property],
+                                inline: false,
+                              });
                             });
                           }
                         );
 
-                        EmbedMessages.push(embed2);
+                        if (arrayTest.length > 0)
+                          for (let i = 0; i < arrayTest.length; i += 10) {
+                            const chunk = arrayTest.slice(i, i + 10);
+                            embed2.setFields(chunk);
+                            EmbedMessages.push(embed2);
+                          }
                       }
 
                       if (Object.keys(textChanges).length > 0) {
@@ -344,6 +363,7 @@ export async function FortniteCloudStorage() {
                           .setColor("Random")
                           .setTitle("String modification detected")
                           .setTimestamp();
+                        let arrayTest: EmbedField[] = [];
 
                         Object.keys(textChanges).forEach((KEY) => {
                           const data = textChanges[KEY];
@@ -351,15 +371,23 @@ export async function FortniteCloudStorage() {
                             data.OLDString = data.NativateString;
 
                           var FRFR = `~~${data.OLDString}~~ \n${data.NewString}`;
-                          embed2.addFields([
-                            {
-                              name: KEY,
-                              value: FRFR,
-                            },
-                          ]);
+
+                          console.log(FRFR);
+
+                          arrayTest.push({
+                            name: KEY,
+                            value: FRFR,
+                            inline: false,
+                          });
                         });
 
-                        EmbedMessages.push(embed2);
+                        if (arrayTest.length > 0)
+                          for (let i = 0; i < arrayTest.length; i += 10) {
+               
+                            const chunk = arrayTest.slice(i, i + 10);
+                            embed2.setFields(chunk);
+                            EmbedMessages.push(embed2);
+                          }
                       }
 
                       if (DataChanged.length > 1900) {
@@ -368,17 +396,25 @@ export async function FortniteCloudStorage() {
                           name: `${cachedItem.filename}.diff`,
                         });
 
-                        await webhook.send({
-                          content: `${cachedItem.filename} has been updated!`,
-                          files: [attachment],
-                          embeds: EmbedMessages,
-                        });
+                        if (EmbedMessages.length > 0)
+                          for (let i = 0; i < EmbedMessages.length; i += 10) {
+                            const chunk = EmbedMessages.slice(i, i + 10);
+                            await webhook.send({
+                              content: `${cachedItem.filename} has been updated!`,
+                              files: i === 0 ? [attachment] : [],
+                              embeds: chunk,
+                            });
+                          }
                       } else {
                         if (DataChanged.trim() !== "") {
-                          await webhook.send({
-                            content: `${cachedItem.filename} has been updated! \n\`\`\`diff\n${DataChanged}\n\`\`\``,
-                            embeds: EmbedMessages,
-                          });
+                          if (EmbedMessages.length > 0)
+                            for (let i = 0; i < EmbedMessages.length; i += 10) {
+                              const chunk = EmbedMessages.slice(i, i + 10);
+                              await webhook.send({
+                                content: `${cachedItem.filename} has been updated! \n\`\`\`diff\n${DataChanged}\n\`\`\``,
+                                embeds: chunk,
+                              });
+                            }
                         }
                       }
 

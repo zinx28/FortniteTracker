@@ -1,6 +1,5 @@
 [Core.Log]
 LogWeaponRangedOverheat=Warning
-LogSlate=Warning
 LogHotfixManager=Warning
 [ConsoleVariables]
 bEnableUnloadedPluginHotfixing=1
@@ -29,16 +28,19 @@ Athena.Frontend.SimpleBuildAndEditModals.Enabled=true
 OSS.VerifyAuthParseInHttpThreadEnabled=false
 Feral.ShowLoadingScreenDuringGameSetup=0
 Verse.PopulateCompiledPackageRegistryPlugins="e1729c50-4845-01ba-18da-478919f7de66,2824bcea-4c14-a1cd-27dc-6dbaf826b17a,14a382d6-0a96-4f6b-bb22-939b122c09bf"
-Proton.SongAllowlist=butterbarnhoedown,showthemwhoweare,ogfutureremix,youdontknowme,streetsignite,winterfestwish,thefutureme,thelastcavallard,touchthesun
-Pilgrim.ProcessPlayerProgressionAfterSongMetering=1.0
 Athena.BrokenPawnReplication.TrackingHeight=73000
 Fort.Rollback.UseEnhancedInputForValetCars=0
 Fort.Rollback.UseEnhancedInputForMotorcycles=0
-Pilgrim.EnableProton=0
 SkinWeightProfileManager.SkipLODWithoutDataOrStreamingRequest=0
 Fort.Rollback.AllowSpriteSwap=0
 Athena.BrokenPawnReplication.IrisDebugLogCount=1
 PRM.RequestTimeout=10
+AbilitySystem.AbilityTask.MaxCount=2500
+Fort.Rollback.EnableMaxHealthFallbackCache=0
+FortMusic.PassiveListening.OverrideMusicPlaybackType=Stems
+Sparks.Streaming.VolumeAdjustDb.Preview=15.0
+Fort.CreativeCommunicationOverride.bEnableAddingCreativeCommunicationWidgetScene=false
+MM.EnableNewFlow=false
 [OnlineSubsystemMcp.OnlineDiscoveryServiceMcp]
 bEnableAccessTokenAuthentication=true
 [OnlineSubsystemMcp.OnlineDiscoveryServiceMcp Fortnite]
@@ -76,3 +78,5 @@ bEnableSubspaceBiasOrder=true
 +ExperimentalDevelopmentStatusIgnoreList="/CRD_CameraModes/SetupAssets/PID_CP_Devices_FirstPerson.PID_CP_Devices_FirstPerson"
 [/Script/FortniteGame.FortHotfixManager]
 bEnableUnloadedPluginHotfixing=true
+[/Script/OnlineSubsystemUtils.IpNetDriver]
+ResolutionConnectionTimeout=60
