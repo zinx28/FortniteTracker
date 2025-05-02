@@ -99,6 +99,7 @@
 +TextReplacements=(Category=Game, Namespace="", bIsMinimalPatch=True, Key="2D06D17342C441E098A7A980074872F0", NativeString="Perfect Bobom Milk Tea", LocalizedStrings=(("pl","Ideal. herbata bąbelkowa Bobom")))
 +TextReplacements=(Category=Game, Namespace="", bIsMinimalPatch=True, Key="13FEB1CC43FB169A0CF656AEC4CDCC02", NativeString="Perfect Bobom Milk Tea", LocalizedStrings=(("pl","Ideal. herbata bąbelkowa Bobom")))
 +TextReplacements=(Category=Game, Namespace="", bIsMinimalPatch=True, Key="CADD081A4DD43C4EC64988882BDDFE9F", NativeString="Give {0} '{1}'", LocalizedStrings=(("ja","「{1}」を{0}個渡す")))
++TextReplacements=(Category=Game, Namespace="", bIsMinimalPatch=True, Key="8B1BA2A141306BE4A3ADB2A444E2B9A2", NativeString="Set_01", LocalizedStrings=(("ar","صواعق البرق"),("en","Thunderbolts"),("de","Thunderbolts"),("es","Thunderbolts"),("es-419","Thunderbolts"),("fr","Thunderbolts"),("it","Thunderbolts"),("ja","サンダーボルツ"),("ko","썬더볼츠"),("pl","Thunderbolts"),("pt-BR","Thunderbolts"),("ru","Громовержцы"),("tr","Thunderbolts"),("zh-hans","雷霆特工队")))
 [/Script/FortniteGame.FortGameInstance]
 bBattleRoyaleMatchmakingEnabled=true
 +DynamicSoundData=(Name=JobBoard_ShadowBriefing_Failure_Cue, SoundOverrideType=Cue, Volume=0.0)
