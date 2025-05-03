@@ -35,12 +35,13 @@ SkinWeightProfileManager.SkipLODWithoutDataOrStreamingRequest=0
 Fort.Rollback.AllowSpriteSwap=0
 Athena.BrokenPawnReplication.IrisDebugLogCount=1
 PRM.RequestTimeout=10
-AbilitySystem.AbilityTask.MaxCount=2500
+AbilitySystem.AbilityTask.MaxCount=5000
 Fort.Rollback.EnableMaxHealthFallbackCache=0
 FortMusic.PassiveListening.OverrideMusicPlaybackType=Stems
 Sparks.Streaming.VolumeAdjustDb.Preview=15.0
 Fort.CreativeCommunicationOverride.bEnableAddingCreativeCommunicationWidgetScene=false
 MM.EnableNewFlow=false
+Discovery.TileDetails.SkipExternalVMInitialization=false
 [OnlineSubsystemMcp.OnlineDiscoveryServiceMcp]
 bEnableAccessTokenAuthentication=true
 [OnlineSubsystemMcp.OnlineDiscoveryServiceMcp Fortnite]

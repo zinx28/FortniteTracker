@@ -85,256 +85,6 @@
     "activeSince": "2025-02-18T09:00:00.000Z"
   },
   {
-    "eventType": "EventFlag.Event_S34_StoryQuests_P1",
-    "activeUntil": "2025-05-02T13:00:00.000Z",
-    "activeSince": "2025-02-21T14:00:00.000Z"
-  },
-  {
-    "eventType": "EventFlag.Event_FigmentQuests_S03",
-    "activeUntil": "2025-06-08T09:00:00.000Z",
-    "activeSince": "2025-03-24T13:00:00.000Z"
-  },
-  {
-    "eventType": "EventFlag.Event_FigmentPassS03",
-    "activeUntil": "2025-06-08T09:00:00.000Z",
-    "activeSince": "2025-03-25T09:00:00.000Z"
-  },
-  {
-    "eventType": "EventFlag.Event_S34_CollectionQuests",
-    "activeUntil": "2025-05-02T13:00:00.000Z",
-    "activeSince": "2025-03-25T13:00:00.000Z"
-  },
-  {
-    "eventType": "EventFlag.LobbyStW.Adventure",
-    "activeUntil": "2025-06-19T00:00:00.000Z",
-    "activeSince": "2025-04-03T00:00:00.000Z"
-  },
-  {
-    "eventType": "EventFlag.PassiveIceStorms",
-    "activeUntil": "2025-06-19T00:00:00.000Z",
-    "activeSince": "2025-04-03T00:00:00.000Z"
-  },
-  {
-    "eventType": "EventFlag.PassiveFireStorms",
-    "activeUntil": "2025-06-19T00:00:00.000Z",
-    "activeSince": "2025-04-03T00:00:00.000Z"
-  },
-  {
-    "eventType": "EventFlag.ActiveLightningStorms",
-    "activeUntil": "2025-06-19T00:00:00.000Z",
-    "activeSince": "2025-04-03T00:00:00.000Z"
-  },
-  {
-    "eventType": "EventFlag.PassiveMiniBosses",
-    "activeUntil": "2025-06-19T00:00:00.000Z",
-    "activeSince": "2025-04-03T00:00:00.000Z"
-  },
-  {
-    "eventType": "EventFlag.MissionAlert.MegaAlert",
-    "activeUntil": "2025-06-19T00:00:00.000Z",
-    "activeSince": "2025-04-03T00:00:00.000Z"
-  },
-  {
-    "eventType": "EventFlag.ElderGroupMissions",
-    "activeUntil": "2025-06-19T00:00:00.000Z",
-    "activeSince": "2025-04-03T00:00:00.000Z"
-  },
-  {
-    "eventType": "EventFlag.Phoenix.Adventure",
-    "activeUntil": "2025-06-19T00:00:00.000Z",
-    "activeSince": "2025-04-03T00:00:00.000Z"
-  },
-  {
-    "eventType": "EventFlag.Phoenix.Adventure.Quests",
-    "activeUntil": "2025-06-19T00:00:00.000Z",
-    "activeSince": "2025-04-03T00:00:00.000Z"
-  },
-  {
-    "eventType": "EventFlag.Spring2019.Phase2",
-    "activeUntil": "2025-05-15T00:00:00.000Z",
-    "activeSince": "2025-04-03T00:00:00.000Z"
-  },
-  {
-    "eventType": "EventFlag.HordeV3",
-    "activeUntil": "2025-06-19T00:00:00.000Z",
-    "activeSince": "2025-04-03T00:00:00.000Z"
-  },
-  {
-    "eventType": "EventFlag.Event_SparksS08",
-    "activeUntil": "2025-06-17T08:00:00.000Z",
-    "activeSince": "2025-04-08T08:00:00.000Z"
-  },
-  {
-    "eventType": "EventFlag.Event_ReloadQuests_Dashberry_Kickstart",
-    "activeUntil": "2025-07-22T13:00:00.000Z",
-    "activeSince": "2025-04-15T11:00:00.000Z"
-  },
-  {
-    "eventType": "EventFlag.Event_RankedTrooper_Granter",
-    "activeUntil": "2025-05-10T13:00:00.000Z",
-    "activeSince": "2025-04-15T13:00:00.000Z"
-  },
-  {
-    "eventType": "EventFlag.Event_RankedTrooper",
-    "activeUntil": "2025-06-07T13:00:00.000Z",
-    "activeSince": "2025-04-15T13:00:00.000Z"
-  },
-  {
-    "eventType": "EventFlag.Event_SparksS08_WeeklyQuests",
-    "activeUntil": "2025-06-17T08:00:00.000Z",
-    "activeSince": "2025-04-18T00:00:00.000Z"
-  },
-  {
-    "eventType": "EventFlag.Event_Juno_OroHunt",
-    "activeUntil": "2025-05-05T07:00:00.000Z",
-    "activeSince": "2025-04-22T08:00:00.000Z"
-  },
-  {
-    "eventType": "EventFlag.LobbySeason35",
-    "activeUntil": "2025-06-13T13:00:00.000Z",
-    "activeSince": "2025-04-25T13:00:00.000Z"
-  },
-  {
-    "eventType": "EventFlag.Event_S34_StoryQuests_EOS_02",
-    "activeUntil": "2025-05-02T16:00:00.000Z",
-    "activeSince": "2025-04-30T16:00:00.000Z"
-  },
-  {
-    "eventType": "EventFlag.STWIrwin",
-    "activeUntil": "2025-05-29T00:00:00.000Z",
-    "activeSince": "2025-05-01T00:00:00.000Z"
-  },
-  {
-    "eventType": "EventFlag.HordeV3.Week11",
-    "activeUntil": "2025-05-08T00:00:00.000Z",
-    "activeSince": "2025-05-01T00:00:00.000Z"
-  },
-  {
-    "eventType": "EventFlag.Event_FigmentEvents_S03",
-    "activeUntil": "2025-06-08T08:00:00.000Z",
-    "activeSince": "2025-05-02T04:00:00.000Z"
-  },
-  {
-    "eventType": "EventFlag.Event_S35_MidSeasonCharacter_Quests",
-    "activeUntil": "2025-06-08T09:00:00.000Z",
-    "activeSince": "2025-05-02T06:00:00.000Z"
-  },
-  {
-    "eventType": "EventFlag.Event_S35_FoundQuests",
-    "activeUntil": "2025-06-08T06:00:00.000Z",
-    "activeSince": "2025-05-02T06:00:00.000Z"
-  },
-  {
-    "eventType": "EventFlag.Event_DelMar_S35_MS_Weekly",
-    "activeUntil": "2025-06-07T19:00:00.000Z",
-    "activeSince": "2025-05-02T06:00:00.000Z"
-  },
-  {
-    "eventType": "EventFlag.Event_DelMar_Season06_Ranked",
-    "activeUntil": "2025-06-07T19:00:00.000Z",
-    "activeSince": "2025-05-02T06:00:00.000Z"
-  },
-  {
-    "eventType": "EventFlag.Event_JunoSeason3Pass",
-    "activeUntil": "2025-06-08T06:00:00.000Z",
-    "activeSince": "2025-05-02T06:00:00.000Z"
-  },
-  {
-    "eventType": "EventFlag.Event_S35_UISeasonEnd",
-    "activeUntil": "2025-06-08T06:00:00.000Z",
-    "activeSince": "2025-05-02T08:00:00.000Z"
-  },
-  {
-    "eventType": "EventFlag.JethroBus",
-    "activeUntil": "2025-05-09T13:00:00.000Z",
-    "activeSince": "2025-05-02T08:00:00.000Z"
-  },
-  {
-    "eventType": "EventFlag.Event_DelMar_Season01_Dailies",
-    "activeUntil": "2026-01-01T14:00:00.000Z",
-    "activeSince": "2024-04-09T13:00:00.000Z"
-  },
-  {
-    "eventType": "EventFlag.Event_Juno_Osiris_TownRewards",
-    "activeUntil": "2026-04-15T13:00:00.000Z",
-    "activeSince": "2024-05-03T13:00:00.000Z"
-  },
-  {
-    "eventType": "EventFlag.Event_Juno_Hardcore",
-    "activeUntil": "2026-07-15T08:00:00.000Z",
-    "activeSince": "2024-06-11T08:00:00.000Z"
-  },
-  {
-    "eventType": "EventFlag.Event_DelMar_QuestPack_02",
-    "activeUntil": "2025-10-02T00:00:00.000Z",
-    "activeSince": "2024-07-26T00:00:00.000Z"
-  },
-  {
-    "eventType": "EventFlag.Event_Ecosystem_DailyBonusGoals",
-    "activeUntil": "2028-11-17T07:00:00.000Z",
-    "activeSince": "2024-11-28T09:00:00.000Z"
-  },
-  {
-    "eventType": "EventFlag.Event_ JunoQuestRepeatable  ",
-    "activeUntil": "2026-02-11T05:00:00.000Z",
-    "activeSince": "2024-11-30T05:00:00.000Z"
-  },
-  {
-    "eventType": "EventFlag.Event_Evergreen_DailyQuests",
-    "activeUntil": "2028-05-05T06:00:00.000Z",
-    "activeSince": "2024-12-01T07:00:00.000Z"
-  },
-  {
-    "eventType": "EventFlag.Event_BR_Ch06_MapDiscovery",
-    "activeUntil": "2025-12-01T07:00:00.000Z",
-    "activeSince": "2024-12-01T09:00:00.000Z"
-  },
-  {
-    "eventType": "EventFlag.Event_FigmentQuests_Ch01_MapDiscovery",
-    "activeUntil": "2025-11-28T14:00:00.000Z",
-    "activeSince": "2024-12-06T14:00:00.000Z"
-  },
-  {
-    "eventType": "EventFlag.Event_FigmentQuests_Evergreen",
-    "activeUntil": "2026-11-27T14:00:00.000Z",
-    "activeSince": "2024-12-06T14:00:00.000Z"
-  },
-  {
-    "eventType": "EventFlag.Event_ReloadQuests_Ch06_MapDiscovery",
-    "activeUntil": "2025-11-28T14:00:00.000Z",
-    "activeSince": "2024-12-06T14:00:00.000Z"
-  },
-  {
-    "eventType": "EventFlag.Event_S33_FeralCorgiQuests",
-    "activeUntil": "2025-12-31T14:00:00.000Z",
-    "activeSince": "2024-12-11T14:00:00.000Z"
-  },
-  {
-    "eventType": "EventFlag.Event_SproutQuestDaily",
-    "activeUntil": "2026-02-12T09:00:00.000Z",
-    "activeSince": "2024-12-12T07:00:00.000Z"
-  },
-  {
-    "eventType": "EventFlag.BetaStorms.B",
-    "activeUntil": "2027-01-21T00:00:00.000Z",
-    "activeSince": "2025-01-23T00:00:00.000Z"
-  },
-  {
-    "eventType": "EventFlag.STWHuntMonster",
-    "activeUntil": "2027-01-21T00:00:00.000Z",
-    "activeSince": "2025-01-23T00:00:00.000Z"
-  },
-  {
-    "eventType": "EventFlag.LobbySeason34",
-    "activeUntil": "2025-05-09T13:00:00.000Z",
-    "activeSince": "2025-02-14T14:00:00.000Z"
-  },
-  {
-    "eventType": "EventFlag.Event_STW_DailyQuests",
-    "activeUntil": "2029-02-07T07:00:00.000Z",
-    "activeSince": "2025-02-18T09:00:00.000Z"
-  },
-  {
     "eventType": "EventFlag.Event_FigmentQuests_S03",
     "activeUntil": "2025-06-08T09:00:00.000Z",
     "activeSince": "2025-03-24T13:00:00.000Z"
@@ -435,11 +185,6 @@
     "activeSince": "2025-04-25T13:00:00.000Z"
   },
   {
-    "eventType": "EventFlag.Event_S34_StoryQuests_EOS_02",
-    "activeUntil": "2025-05-02T16:00:00.000Z",
-    "activeSince": "2025-04-30T16:00:00.000Z"
-  },
-  {
     "eventType": "EventFlag.STWIrwin",
     "activeUntil": "2025-05-29T00:00:00.000Z",
     "activeSince": "2025-05-01T00:00:00.000Z"
@@ -476,7 +221,7 @@
   },
   {
     "eventType": "EventFlag.Event_JunoSeason3Pass",
-    "activeUntil": "2025-06-08T06:00:00.000Z",
+    "activeUntil": "2025-06-07T18:30:00.000Z",
     "activeSince": "2025-05-02T06:00:00.000Z"
   },
   {
@@ -488,5 +233,10 @@
     "eventType": "EventFlag.JethroBus",
     "activeUntil": "2025-05-09T13:00:00.000Z",
     "activeSince": "2025-05-02T08:00:00.000Z"
+  },
+  {
+    "eventType": "EventFlag.Event_SparksSpotlight_S08_Event02",
+    "activeUntil": "2025-05-10T00:00:00.000Z",
+    "activeSince": "2025-05-03T00:00:00.000Z"
   }
 ]
