@@ -137,7 +137,6 @@ export async function diffFile(
             match = line.match(
               /^\+TextReplacements=\(\s*Category=([^,]+),\s*Namespace="([^"]*)",\s*(?:bIsMinimalPatch=[^,]+,\s*)?Key="([^"]+)",\s*NativeString="([^"]+)",\s*LocalizedStrings=\((.*)\)\)$/
             );
-            
 
             if (match) {
               console.log(match);
@@ -299,12 +298,12 @@ export async function FortniteCloudStorage() {
 
                     if (DataChanged) {
                       var EmbedMessages: EmbedBuilder[] = [];
-
                       if (Object.keys(modifications).length > 0) {
                         const embed = new EmbedBuilder()
                           .setColor("Random")
                           .setTitle("CurveTable modification detected")
                           .setTimestamp();
+                        console.log("hi");
                         let arrayTest: EmbedField[] = [];
 
                         Object.keys(modifications).forEach((dataTable) => {
@@ -383,7 +382,6 @@ export async function FortniteCloudStorage() {
 
                         if (arrayTest.length > 0)
                           for (let i = 0; i < arrayTest.length; i += 10) {
-               
                             const chunk = arrayTest.slice(i, i + 10);
                             embed2.setFields(chunk);
                             EmbedMessages.push(embed2);
@@ -405,6 +403,11 @@ export async function FortniteCloudStorage() {
                               embeds: chunk,
                             });
                           }
+                        else
+                        await webhook.send({
+                          content: `${cachedItem.filename} has been updated!`,
+                          files: [attachment],
+                        });
                       } else {
                         if (DataChanged.trim() !== "") {
                           if (EmbedMessages.length > 0)
@@ -415,6 +418,10 @@ export async function FortniteCloudStorage() {
                                 embeds: chunk,
                               });
                             }
+                          else
+                            await webhook.send({
+                              content: `${cachedItem.filename} has been updated! \n\`\`\`diff\n${DataChanged}\n\`\`\``,
+                            });
                         }
                       }
 

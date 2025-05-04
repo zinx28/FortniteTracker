@@ -42,6 +42,7 @@ Sparks.Streaming.VolumeAdjustDb.Preview=15.0
 Fort.CreativeCommunicationOverride.bEnableAddingCreativeCommunicationWidgetScene=false
 MM.EnableNewFlow=false
 Discovery.TileDetails.SkipExternalVMInitialization=false
+Verse.CreateCompatConstraintPackages=0
 [OnlineSubsystemMcp.OnlineDiscoveryServiceMcp]
 bEnableAccessTokenAuthentication=true
 [OnlineSubsystemMcp.OnlineDiscoveryServiceMcp Fortnite]
