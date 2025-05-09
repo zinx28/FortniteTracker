@@ -8,6 +8,7 @@ ForceSeasonRefreshCounter=37
 bCheckForActivityTournamentLocks=false
 +ExperimentalBucketPercentList=(ExperimentNum=911,Name="MoveDMToPriorityProfileOptions",BucketPercents=(0,100),WinningBucketIndex=-1)
 ExperimentalCohortPercent=(CohortPercent=100,ExperimentNum=900)
++ExperimentalCohortPercent=(CohortPercent=99,ExperimentNum=623)
 +HiddenSettings="LobbyMusicVolume"
 +CreativeBetaPermissions=(PrimaryAssetId="PlaylistUserOption:Device_ExperienceSettings_V2_C_BubbleChat",PermissionTagContainer=("Developer"),EntitlementTagContainer=("VKCreateUGCEpicDeveloper"))
 +CreativeBetaPermissions=(PrimaryAssetId="PlaylistUserOption:Device_ExperienceSettings_V2_C_BubbleChatMaximumRange",PermissionTagContainer=("Developer"),EntitlementTagContainer=("VKCreateUGCEpicDeveloper"))

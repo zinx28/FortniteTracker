@@ -71,10 +71,10 @@ export async function FortniteTracker() {
       Name: "PublicTest-Prod",
       URL: "https://fngw-mcp-gc-publictest-prod.ol.epicgames.com/fortnite/api/version", // useless from the cln and build ~ fortnite-public-service-publictest-prod.ol.epicgames.com ~ fortnite-public-service-extqauetestingb-prod.ol.epicgames.com
     }, // ^^ i dont want to have it updating  being useless
-    {
-      Name: "Floss-Prod",
-      URL: "https://fortnite-public-service-floss-prod.ol.epicgames.com/fortnite/api/version",
-    },
+    //{
+     // Name: "Floss-Prod",
+     // URL: "https://fortnite-public-service-floss-prod.ol.epicgames.com/fortnite/api/version",
+   // },
     //{
     //  Name: "Floss-Prod",
      // URL: "https://fortnite-public-service-floss-prod.ol.epicgames.com/fortnite/api/version", // pretty useless i need to test run this

@@ -404,10 +404,10 @@ export async function FortniteCloudStorage() {
                             });
                           }
                         else
-                        await webhook.send({
-                          content: `${cachedItem.filename} has been updated!`,
-                          files: [attachment],
-                        });
+                          await webhook.send({
+                            content: `${cachedItem.filename} has been updated!`,
+                            files: [attachment],
+                          });
                       } else {
                         if (DataChanged.trim() !== "") {
                           if (EmbedMessages.length > 0)

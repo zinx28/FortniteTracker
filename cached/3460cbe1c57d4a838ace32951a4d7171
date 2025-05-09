@@ -1,6 +1,7 @@
 [Core.Log]
 LogWeaponRangedOverheat=Warning
 LogHotfixManager=Warning
+LogPlayspaceServerExpirationComponent=Verbose
 [ConsoleVariables]
 bEnableUnloadedPluginHotfixing=1
 SimpleEdit.EditCooldownSeconds=0
@@ -41,8 +42,8 @@ FortMusic.PassiveListening.OverrideMusicPlaybackType=Stems
 Sparks.Streaming.VolumeAdjustDb.Preview=15.0
 Fort.CreativeCommunicationOverride.bEnableAddingCreativeCommunicationWidgetScene=false
 MM.EnableNewFlow=false
-Discovery.TileDetails.SkipExternalVMInitialization=false
 Verse.CreateCompatConstraintPackages=0
+Fort.Rollback.SkipTargetSelectionListCheckForEffectContainer=0
 [OnlineSubsystemMcp.OnlineDiscoveryServiceMcp]
 bEnableAccessTokenAuthentication=true
 [OnlineSubsystemMcp.OnlineDiscoveryServiceMcp Fortnite]

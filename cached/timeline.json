@@ -75,23 +75,18 @@
     "activeSince": "2025-01-23T00:00:00.000Z"
   },
   {
-    "eventType": "EventFlag.LobbySeason34",
-    "activeUntil": "2025-05-09T13:00:00.000Z",
-    "activeSince": "2025-02-14T14:00:00.000Z"
-  },
-  {
     "eventType": "EventFlag.Event_STW_DailyQuests",
     "activeUntil": "2029-02-07T07:00:00.000Z",
     "activeSince": "2025-02-18T09:00:00.000Z"
   },
   {
     "eventType": "EventFlag.Event_FigmentQuests_S03",
-    "activeUntil": "2025-06-08T09:00:00.000Z",
+    "activeUntil": "2025-06-07T18:30:00.000Z",
     "activeSince": "2025-03-24T13:00:00.000Z"
   },
   {
     "eventType": "EventFlag.Event_FigmentPassS03",
-    "activeUntil": "2025-06-08T09:00:00.000Z",
+    "activeUntil": "2025-06-07T18:30:00.000Z",
     "activeSince": "2025-03-25T09:00:00.000Z"
   },
   {
@@ -175,11 +170,6 @@
     "activeSince": "2025-04-18T00:00:00.000Z"
   },
   {
-    "eventType": "EventFlag.Event_Juno_OroHunt",
-    "activeUntil": "2025-05-05T07:00:00.000Z",
-    "activeSince": "2025-04-22T08:00:00.000Z"
-  },
-  {
     "eventType": "EventFlag.LobbySeason35",
     "activeUntil": "2025-06-13T13:00:00.000Z",
     "activeSince": "2025-04-25T13:00:00.000Z"
@@ -190,23 +180,18 @@
     "activeSince": "2025-05-01T00:00:00.000Z"
   },
   {
-    "eventType": "EventFlag.HordeV3.Week11",
-    "activeUntil": "2025-05-08T00:00:00.000Z",
-    "activeSince": "2025-05-01T00:00:00.000Z"
-  },
-  {
     "eventType": "EventFlag.Event_FigmentEvents_S03",
-    "activeUntil": "2025-06-08T08:00:00.000Z",
+    "activeUntil": "2025-06-07T18:30:00.000Z",
     "activeSince": "2025-05-02T04:00:00.000Z"
   },
   {
-    "eventType": "EventFlag.Event_S35_MidSeasonCharacter_Quests",
-    "activeUntil": "2025-06-08T09:00:00.000Z",
+    "eventType": "EventFlag.Event_S35_FoundQuests",
+    "activeUntil": "2025-06-07T18:30:00.000Z",
     "activeSince": "2025-05-02T06:00:00.000Z"
   },
   {
-    "eventType": "EventFlag.Event_S35_FoundQuests",
-    "activeUntil": "2025-06-08T06:00:00.000Z",
+    "eventType": "EventFlag.Event_S35_MidSeasonCharacter_Quests",
+    "activeUntil": "2025-06-07T18:30:00.000Z",
     "activeSince": "2025-05-02T06:00:00.000Z"
   },
   {
@@ -226,17 +211,27 @@
   },
   {
     "eventType": "EventFlag.Event_S35_UISeasonEnd",
-    "activeUntil": "2025-06-08T06:00:00.000Z",
-    "activeSince": "2025-05-02T08:00:00.000Z"
-  },
-  {
-    "eventType": "EventFlag.JethroBus",
-    "activeUntil": "2025-05-09T13:00:00.000Z",
+    "activeUntil": "2025-06-07T18:30:00.000Z",
     "activeSince": "2025-05-02T08:00:00.000Z"
   },
   {
     "eventType": "EventFlag.Event_SparksSpotlight_S08_Event02",
     "activeUntil": "2025-05-10T00:00:00.000Z",
     "activeSince": "2025-05-03T00:00:00.000Z"
+  },
+  {
+    "eventType": "EventFlag.HordeV3.Week05",
+    "activeUntil": "2025-05-15T00:00:00.000Z",
+    "activeSince": "2025-05-08T00:00:00.000Z"
+  },
+  {
+    "eventType": "EventFlag.FNCSBus",
+    "activeUntil": "2025-05-14T13:00:00.000Z",
+    "activeSince": "2025-05-09T13:00:00.000Z"
+  },
+  {
+    "eventType": "EventFlag.Event_FigmentQuests_S03_HiddenQuest",
+    "activeUntil": "2025-06-07T18:30:00.000Z",
+    "activeSince": "2025-05-09T13:00:00.000Z"
   }
 ]
