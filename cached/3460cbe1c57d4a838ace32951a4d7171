@@ -3,10 +3,13 @@ LogWeaponRangedOverheat=Warning
 LogHotfixManager=Warning
 LogPlayspaceServerExpirationComponent=Verbose
 [ConsoleVariables]
+Fort.EnableJethroChandelier=1
+MM.ReadyUpDebounce=0
+MM.AlwaysReturnAllLocalPlayers_IMOnly=true
+MM.AlwaysReturnAllLocalPlayers=false
+Fort.Rollback.UseTempJethroWeaponShieldBlock=0
 bEnableUnloadedPluginHotfixing=1
 SimpleEdit.EditCooldownSeconds=0
-MM.UpdateIslandManagerPartyReadinessFirst=false 
-MM.UpdateIslandManagerFirst=false
 TopBar.ShowShowdown=0
 TopBar.ShowPoblano=1
 Fort.CompeteUI.LobbyPanel.ShowPoblano=1
@@ -28,7 +31,7 @@ FortContentBeaconHostObjectV2.ErrorReportLogSizeKB=500
 Athena.Frontend.SimpleBuildAndEditModals.Enabled=true
 OSS.VerifyAuthParseInHttpThreadEnabled=false
 Feral.ShowLoadingScreenDuringGameSetup=0
-Verse.PopulateCompiledPackageRegistryPlugins="e1729c50-4845-01ba-18da-478919f7de66,2824bcea-4c14-a1cd-27dc-6dbaf826b17a,14a382d6-0a96-4f6b-bb22-939b122c09bf"
+Verse.PopulateCompiledPackageRegistryPlugins="e1729c50-4845-01ba-18da-478919f7de66,2824bcea-4c14-a1cd-27dc-6dbaf826b17a,14a382d6-0a96-4f6b-bb22-939b122c09bf,6d6ef1d7-904c-45c7-95c1-460f2d228d03"
 Athena.BrokenPawnReplication.TrackingHeight=73000
 Fort.Rollback.UseEnhancedInputForValetCars=0
 Fort.Rollback.UseEnhancedInputForMotorcycles=0
@@ -41,7 +44,6 @@ Fort.Rollback.EnableMaxHealthFallbackCache=0
 FortMusic.PassiveListening.OverrideMusicPlaybackType=Stems
 Sparks.Streaming.VolumeAdjustDb.Preview=15.0
 Fort.CreativeCommunicationOverride.bEnableAddingCreativeCommunicationWidgetScene=false
-MM.EnableNewFlow=false
 Verse.CreateCompatConstraintPackages=0
 Fort.Rollback.SkipTargetSelectionListCheckForEffectContainer=0
 [OnlineSubsystemMcp.OnlineDiscoveryServiceMcp]
@@ -81,5 +83,3 @@ bEnableSubspaceBiasOrder=true
 +ExperimentalDevelopmentStatusIgnoreList="/CRD_CameraModes/SetupAssets/PID_CP_Devices_FirstPerson.PID_CP_Devices_FirstPerson"
 [/Script/FortniteGame.FortHotfixManager]
 bEnableUnloadedPluginHotfixing=true
-[/Script/OnlineSubsystemUtils.IpNetDriver]
-ResolutionConnectionTimeout=60

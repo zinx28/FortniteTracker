@@ -1,13 +1,18 @@
 import axios from "axios";
 import { extractLinks, fetchText, getNewLinks } from "../utils/extractLinks";
 import { loadCachedLinks, saveLinks, saveNewLinks } from "../utils/cachedData";
-import { WebhookClient } from "discord.js";
+import { EmbedBuilder, WebhookClient } from "discord.js";
 import {
   loadCachedTournaments,
   saveIDTournament,
   saveNewLinksTournament,
   type TournamentType,
 } from "../utils/tournamentsCache";
+import {
+  hasEmergencyChanged,
+  loadLastEmergency,
+  saveLastEmergency,
+} from "../utils/cachedEmergency";
 
 export async function FortniteGame() {
   try {
@@ -28,6 +33,25 @@ export async function FortniteGame() {
       saveNewLinks(newLinks);
       // discord message???
     }
+
+    var Emergency =
+      rawTexxt.emergencynoticev2.emergencynotices.emergencynotices;
+    console.log(rawTexxt.emergencynoticev2);
+    if (Emergency && Emergency.length > 0) {
+      if (hasEmergencyChanged(Emergency[0])) {
+        const webhook3 = new WebhookClient({
+          url: process.env.NewsTracker as string,
+        });
+        const embed = new EmbedBuilder()
+          .setTitle(Emergency[0].title)
+          .setDescription(Emergency[0].body)
+          .setColor("Random")
+          .setTimestamp();
+
+        webhook3.send({ embeds: [embed] });
+      }
+      saveLastEmergency(Emergency[0]);
+    } else saveLastEmergency({});
 
     var Tournaments =
       rawTexxt.tournamentinformation.tournament_info.tournaments;
