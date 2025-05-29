@@ -1,5 +1,6 @@
 [ConsoleVariables]
 CMS.MaxImageWidth=1920
 http.CurlEventLoopEnableChance=100
+http.MaxConcurrentRequests=4
 [/Script/SwitchRuntimeSettings.SwitchRuntimeSettings]
 bDisablePresenceUpdates=true

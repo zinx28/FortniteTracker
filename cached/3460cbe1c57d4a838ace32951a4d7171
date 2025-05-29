@@ -1,13 +1,11 @@
 [Core.Log]
 LogWeaponRangedOverheat=Warning
 LogHotfixManager=Warning
-LogPlayspaceServerExpirationComponent=Verbose
 [ConsoleVariables]
 Fort.EnableJethroChandelier=1
 MM.ReadyUpDebounce=0
 MM.AlwaysReturnAllLocalPlayers_IMOnly=true
 MM.AlwaysReturnAllLocalPlayers=false
-Fort.Rollback.UseTempJethroWeaponShieldBlock=0
 bEnableUnloadedPluginHotfixing=1
 SimpleEdit.EditCooldownSeconds=0
 TopBar.ShowShowdown=0
@@ -40,12 +38,13 @@ Fort.Rollback.AllowSpriteSwap=0
 Athena.BrokenPawnReplication.IrisDebugLogCount=1
 PRM.RequestTimeout=10
 AbilitySystem.AbilityTask.MaxCount=5000
-Fort.Rollback.EnableMaxHealthFallbackCache=0
 FortMusic.PassiveListening.OverrideMusicPlaybackType=Stems
 Sparks.Streaming.VolumeAdjustDb.Preview=15.0
-Fort.CreativeCommunicationOverride.bEnableAddingCreativeCommunicationWidgetScene=false
-Verse.CreateCompatConstraintPackages=0
-Fort.Rollback.SkipTargetSelectionListCheckForEffectContainer=0
+Prm.EnablePrmInterstitials=true
+Fort.AutomaticClientReplayRecordingInShipping=1
+Fort.EnableHighResCosmeticStreamingFrontEndOnly=0
+Pilgrim.AFK.InputBasedDetection.Enabled=false
+Jam.AFK.InputBasedDetection.Enabled=false
 [OnlineSubsystemMcp.OnlineDiscoveryServiceMcp]
 bEnableAccessTokenAuthentication=true
 [OnlineSubsystemMcp.OnlineDiscoveryServiceMcp Fortnite]
@@ -83,3 +82,5 @@ bEnableSubspaceBiasOrder=true
 +ExperimentalDevelopmentStatusIgnoreList="/CRD_CameraModes/SetupAssets/PID_CP_Devices_FirstPerson.PID_CP_Devices_FirstPerson"
 [/Script/FortniteGame.FortHotfixManager]
 bEnableUnloadedPluginHotfixing=true
+[/SharpFrog/Gameplay/SharpFrogPlayerStateComp.SharpFrogPlayerStateComp_C]
+OverrideTickInterval=0.5
