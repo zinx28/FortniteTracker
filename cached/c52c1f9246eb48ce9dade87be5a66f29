@@ -11,6 +11,27 @@ FortniteInterestsReferenceToPlaylistMap=(("reference_surface_category_br","set_n
 ReasonSurfacedInfo=(("PlayerRecommendations",(Title=NSLOCTEXT("IslandTagInternal","recommendations_title","WHY YOU ARE SEEING THIS"),Info=NSLOCTEXT("IslandTagInternal","recommendations_info","This island is being recommended to you based on your played games and your favorited Collections, Islands, and Creators. It considers your play history and the play history of other opted-in users to recommend content to you. If you want to, you can opt-out of receiving personalized recommendations in Settings by modifying the "Allow Personalization of Island Recommendations" setting under Account and Privacy->Gameplay Privacy. If you opt-out, you will continue to see recommendations, but they will not be personalized. If you want to, you can favorite Islands, Creators, and Collections in Discover and unfavorite Islands, Creators, and Collections in your Library."))),("Algorithmic",(Title=NSLOCTEXT("IslandTagInternal","recommendations_title","WHY YOU ARE SEEING THIS"),Info=NSLOCTEXT("IslandTagInternal","algorithmic_info","This content is shown based upon Discover metrics such as what's popular and what's trending. This content can change at any time. This is not a personalized recommendation."))),("FriendRecommendations",(Title=NSLOCTEXT("IslandTagInternal","recommendations_title","WHY YOU ARE SEEING THIS"),Info=NSLOCTEXT("IslandTagInternal","friendrecommendations_info","This island is being recommended to you based on what your friends have recommended.\n\n Should you want to, you can opt-out of receiving personalized recommendations in Settings by modifying the "Allow Personalization of Discover Recommendations" setting under Account and Privacy->Gameplay Privacy. If you opt-out, you will continue to see recommendations, but they will not be personalized."))),("FortniteInterests",(Title=NSLOCTEXT("IslandTagInternal","recommendations_title","WHY YOU ARE SEEING THIS"),Info=NSLOCTEXT("IslandTagInternal","interests_info","This island is being recommended to you because you asked to see more games like your favorited Collections, Islands, and Creators. It does not consider your play history. If you want to, you can favorite Islands, Creators, and Collections in Discover and unfavorite Islands, Creators, and Collections in your Library."))))
 AutoImportFriendSuggestionNotificationDuration=0
 bEnableStartupSocialImport=false
++ReplayCompatAllowList=41812893
 PrivacyPolicyURL="https://www.epicgames.com/site/en-US/privacypolicy?mode=game"
 FanContentPolicyURL="https://www.epicgames.com/site/en-US/fan-art-policy?mode=game"
 TermsOfServiceURL="https://www.epicgames.com/site/en-US/tos?mode=game"
+NightNightPluginName=RipeHoneydewNight
+bShouldAllowNightNightMode=true
+bEnableFrontendMeshNightNightCheck=true
+bAllowSubgameSelectToGoNightNight=true
+bAllowAthenaFrontendToGoNightNight=true
+bAllowCampaignFrontendToGoNightNight=true
+bForceEverybodyToGoNightNight=false
+FrontendMeshNightNightMeshName=RipeHoneydew_WP
+bEnableMassFriendImport=false
+bEnableSuggestedFriendList=false
+bShouldAthenaQueryRecentPlayers=false
+MinimumTimeBetweenConsolePresenceUpdates=60.0
+MinimumTimeBetweenMCPPresenceUpdates=60.0
+TournamentRefreshPayoutMaxRateSeconds=60
+TournamentRefreshEventsMaxRateSeconds=60
+TournamentRefreshPlayerMaxRateSeconds=60
+bEnableEventServicePayouts=false
+bEnableClientSettingsSaveToCloud=false
+bEnableEOSGC=false
+bEnableFlagSelection=false

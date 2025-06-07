@@ -1,2 +1,2 @@
-[ConsoleVariables]
-Valkyrie.ValidateAllPropertyErrorsAsWarnings=True
+[/Script/DelMarValidatorEditor.DelMarWorldValidator]
+bIsConfigDisabled=true

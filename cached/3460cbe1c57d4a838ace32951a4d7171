@@ -45,6 +45,16 @@ Fort.AutomaticClientReplayRecordingInShipping=1
 Fort.EnableHighResCosmeticStreamingFrontEndOnly=0
 Pilgrim.AFK.InputBasedDetection.Enabled=false
 Jam.AFK.InputBasedDetection.Enabled=false
+Fort.Rollback.OptimizeSortAndFilter=0
+PlayerFeedback.AllowAttachments=false;Disable Discovery tabs
+Athena.ActivityBrowser.ShowPlayerView=false
+Athena.ActivityBrowser.ShowCreateView=false
+Athena.ActivityBrowser.ShowSearchView=false
+Athena.ActivityBrowser.ShowActivityCategoryView=false
+Sequencer.NetSyncThreshold=1000
+Sequencer.Audio.MaxDeSyncTolerance=0.8
+au.streamcaching.ReadRequestPriority=0
+RipeHoneydew.UseAlternateTitleWidget=2
 [OnlineSubsystemMcp.OnlineDiscoveryServiceMcp]
 bEnableAccessTokenAuthentication=true
 [OnlineSubsystemMcp.OnlineDiscoveryServiceMcp Fortnite]
@@ -84,3 +94,11 @@ bEnableSubspaceBiasOrder=true
 bEnableUnloadedPluginHotfixing=true
 [/SharpFrog/Gameplay/SharpFrogPlayerStateComp.SharpFrogPlayerStateComp_C]
 OverrideTickInterval=0.5
+[OnlineSubsystemMcp.OnlinePresenceMcp]
+bQueryLastOnlineDate=false
+[OnlineSubsystemMcp.OnlineInteractionsMcp]
+bEnabled=false
+[/Script/Hotfix.UpdateManager]
++UpdateContextDefinitions=(Name="Frontend", AdditionalTags=("ShowLoadingScreen"), bPatchCheckEnabled=false)
+[OnlineSubsystemMcp.OnlineIdentityMcp]
+VerifyTokenInterval=900

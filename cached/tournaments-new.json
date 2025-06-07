@@ -1,1 +1,18 @@
-[]
+[
+  {
+    "_id": "stage_0_2025_br",
+    "image": "https://cdn2.unrealengine.com/stage-0-25-800x800-800x800-bc9c28d89a6d.png",
+    "sharedImage": "https://cdn2.unrealengine.com/stage-0-25-1920x1080-1920x1080-b5d0d2550514.jpg",
+    "gridTitle": "STAGE:0 Battle Royale 2025",
+    "description": "高校最強を目指せ！44チーム88名が決勝へ！日本最大 高校eスポーツの祭典『STAGE:0』フォートナイト部門は、 バトルロイヤルとゼロビルドの2部門で開催！ 予選の通過者44チーム88名は、決勝のステージへ！ 全ルールと詳細についてはこちらをご確認ください。fn.gg/stage0",
+    "embedColor": "E6153C"
+  },
+  {
+    "_id": "stage_0_2025_zb",
+    "image": "https://cdn2.unrealengine.com/stage-0-25-800x800-800x800-bc9c28d89a6d.png",
+    "sharedImage": "https://cdn2.unrealengine.com/stage-0-25-1920x1080-1920x1080-b5d0d2550514.jpg",
+    "gridTitle": "STAGE:0 Zero Build 2025",
+    "description": "高校最強を目指せ！44チーム88名が決勝へ！日本最大 高校eスポーツの祭典『STAGE:0』フォートナイト部門は、 バトルロイヤルとゼロビルドの2部門で開催！ 予選の通過者44チーム88名は、決勝のステージへ！ 全ルールと詳細についてはこちらをご確認ください。fn.gg/stage0",
+    "embedColor": "E6153C"
+  }
+]
