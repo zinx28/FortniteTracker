@@ -1,3 +1,2 @@
 [/Script/SpatialMetricsCore.SpatialMetricsSubsystem]
-+AllowedMetricClasses=Class'/Script/FortSpatialMetrics.FortSpatialMetricsLootContainerCount'
-+BlockedMetricClasses=Class'/Script/SpatialMetrics.SpatialMetricsSceneGraphEntityCount'
++AllowedMetricClasses=Class'/Script/SpatialMetrics.SpatialMetricsSceneGraphEntityCount'

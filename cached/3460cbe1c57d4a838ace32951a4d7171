@@ -2,7 +2,7 @@
 LogWeaponRangedOverheat=Warning
 LogHotfixManager=Warning
 [ConsoleVariables]
-Fort.EnableJethroChandelier=1
+Fort.Rollback.UseFlowgraphForShoesOffPawnPreview=0
 MM.ReadyUpDebounce=0
 MM.AlwaysReturnAllLocalPlayers_IMOnly=true
 MM.AlwaysReturnAllLocalPlayers=false
@@ -37,7 +37,6 @@ SkinWeightProfileManager.SkipLODWithoutDataOrStreamingRequest=0
 Fort.Rollback.AllowSpriteSwap=0
 Athena.BrokenPawnReplication.IrisDebugLogCount=1
 PRM.RequestTimeout=10
-AbilitySystem.AbilityTask.MaxCount=5000
 FortMusic.PassiveListening.OverrideMusicPlaybackType=Stems
 Sparks.Streaming.VolumeAdjustDb.Preview=15.0
 Prm.EnablePrmInterstitials=true
@@ -46,15 +45,14 @@ Fort.EnableHighResCosmeticStreamingFrontEndOnly=0
 Pilgrim.AFK.InputBasedDetection.Enabled=false
 Jam.AFK.InputBasedDetection.Enabled=false
 Fort.Rollback.OptimizeSortAndFilter=0
-PlayerFeedback.AllowAttachments=false;Disable Discovery tabs
-Athena.ActivityBrowser.ShowPlayerView=false
-Athena.ActivityBrowser.ShowCreateView=false
-Athena.ActivityBrowser.ShowSearchView=false
-Athena.ActivityBrowser.ShowActivityCategoryView=false
-Sequencer.NetSyncThreshold=1000
-Sequencer.Audio.MaxDeSyncTolerance=0.8
-au.streamcaching.ReadRequestPriority=0
-RipeHoneydew.UseAlternateTitleWidget=2
+Settings.GameData.EnableGameCacheClearing=false
+Fort.Rollback.SupportPrimaryContentInterface=false
+Fort.Rollback.AllowTopBarControlInContentInterface=false
+Fort.EnableSproutChandelier=1
+r.LumenScene.SurfaceCache.CaptureNaniteLandscapes=0
+SkinWeightProfileManager.SkipLODWithoutDataOrStreamingRequest=0
+Fort.Rollback.OnlyApplyCosmeticMeshTransformOffsetWhenThereIsAValidWeaponOwner=0
+Valkyrie.EnableVerseUserWidgetComponentAssetReflection=false
 [OnlineSubsystemMcp.OnlineDiscoveryServiceMcp]
 bEnableAccessTokenAuthentication=true
 [OnlineSubsystemMcp.OnlineDiscoveryServiceMcp Fortnite]
@@ -94,11 +92,3 @@ bEnableSubspaceBiasOrder=true
 bEnableUnloadedPluginHotfixing=true
 [/SharpFrog/Gameplay/SharpFrogPlayerStateComp.SharpFrogPlayerStateComp_C]
 OverrideTickInterval=0.5
-[OnlineSubsystemMcp.OnlinePresenceMcp]
-bQueryLastOnlineDate=false
-[OnlineSubsystemMcp.OnlineInteractionsMcp]
-bEnabled=false
-[/Script/Hotfix.UpdateManager]
-+UpdateContextDefinitions=(Name="Frontend", AdditionalTags=("ShowLoadingScreen"), bPatchCheckEnabled=false)
-[OnlineSubsystemMcp.OnlineIdentityMcp]
-VerifyTokenInterval=900

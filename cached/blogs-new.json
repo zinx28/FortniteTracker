@@ -1,26 +1,33 @@
 [
   {
-    "_id": "7182c269-3f3b-4a03-86aa-9ebf93365fc0",
-    "image": "https://cdn2.unrealengine.com/state-of-unreal-wrap-up-blog-thumbnail-1024x576-v01-1024x576-0890395212f7.jpg",
-    "sharedImage": "https://cdn2.unrealengine.com/state-of-unreal-wrap-up-blog-share-1200x630-v01-1200x630-497ce1372d14.jpg",
-    "gridTitle": "State of Unreal 2025 - Highlights for Fortnite Creators",
-    "urlPattern": "https://create.fortnite.com/news/state-of-unreal-2025-highlights-for-fortnite-creators",
-    "description": "Check out the latest UEFN news from this year’s State of Unreal, including exciting IPs, powerful new features, and more for Fortnite creators."
+    "_id": "4b0a5a94-a74a-4da8-94e9-c9c38a9c0e05",
+    "image": "https://cdn2.unrealengine.com/fortnite-battle-royale-super-thumbnail-576x576-ffc70bb0bf08.jpg",
+    "sharedImage": "https://cdn2.unrealengine.com/fortnite-battle-royale-super-social-1920x1080-0ade1d2279d8.jpg",
+    "gridTitle": "Unleash Your True Power in Fortnite Battle Royale: Super!",
+    "urlPattern": "https://www.fortnite.com/news/unleash-your-true-power-in-fortnite-battle-royale-super",
+    "description": "Aspiring heroes must hone their skills and harness their powers to defeat Mask Maker Daigo and defend the Island in Fortnite BR Chapter 6 Season 3: Super! "
   },
   {
-    "_id": "d98a7cd7-fc6c-4aba-aba2-d370915cbec1",
-    "image": "https://cdn2.unrealengine.com/bg-portal-thumb-1024x576-b180e98cec36.png",
-    "sharedImage": "https://cdn2.unrealengine.com/bg-social-share-1200x630-94b0dc1af621.png",
-    "gridTitle": "Introducing the LEGO® Brick Editor and LEGO Bloom Tycoon Template for Fortnite Creators!",
-    "urlPattern": "https://create.fortnite.com/news/introducing-the-lego-brick-editor-and-lego-bloom-tycoon-template-for-fortnite-creators",
-    "description": "Brick-by-brick LEGO building is coming to UEFN! Plus, there’s a new LEGO template to help you create the garden or farm of your dreams. "
+    "_id": "2d7a8a85-a4f2-45e6-8447-b9ab0bfaa32a",
+    "image": "https://cdn2.unrealengine.com/fortnite-og-chapter-1-season-4-thumb-576x576-de6681c270ed.jpg",
+    "sharedImage": "https://cdn2.unrealengine.com/fortnite-og-chapter-1-season-4-social-1920x1080-20c00609114e.jpg",
+    "gridTitle": "Brace for Impact: Season 4 Hits Fortnite OG!",
+    "urlPattern": "https://www.fortnite.com/news/brace-for-impact-season-4-hits-fortnite-og",
+    "description": "Fortnite OG dives headfirst into Season 4, so dust off your Thermal Rifle and prepare for a (rocket) blast from the past! Experience the Blast Off event."
   },
   {
-    "_id": "0307ea39-e478-4fca-aed7-e6e62df2422b",
-    "image": "https://cdn2.unrealengine.com/discoverqablog-1024x576-1024x576-fc8f663337e5.jpg",
-    "sharedImage": "https://cdn2.unrealengine.com/discoverqablog-1024x576-1024x576-fc8f663337e5.jpg",
-    "gridTitle": "Evolving Fortnite Discover, Together",
-    "urlPattern": "https://create.fortnite.com/news/evolving-fortnite-discover-together",
-    "description": "Check out the first in a new series of blog posts providing more transparency into Fortnite Discover. First up: a look at our vision and goals."
+    "_id": "6b1c6bbf-849f-4cd3-98e9-9c218e5a488e",
+    "image": "https://cdn2.unrealengine.com/lego-fortnite-sonia-thumbnail-576x576-f03ff994c559.jpg",
+    "sharedImage": "https://cdn2.unrealengine.com/fortnite-sonia-outfit-lego-style-1920x1080-38d3e37d1e97.jpg",
+    "gridTitle": "Super Stuff is Happening in LEGO® Fortnite Before Its Super Update",
+    "urlPattern": "https://www.fortnite.com/news/super-stuff-is-happening-in-lego-fortnite-before-its-super-update",
+    "description": "In the lead-up to LEGO Fortnite's super update, check out what's happening including the appearance of mysterious Spires and a new LEGO Pass!"
+  },
+  {
+    "_id": "2116b3fb-173d-4e55-ab29-a1aab1599fcb",
+    "image": "https://cdn2.unrealengine.com/fortnite-rankers-utopia-umbrella-thumbnail-576x576-0f053ec1846b.jpg",
+    "gridTitle": "Fortnite Battle Royale C6S3 Competitive Details",
+    "urlPattern": "https://www.fortnite.com/news/fortnite-br-chapter-6-season-3-competitive-details",
+    "description": ""
   }
 ]

@@ -1,18 +1,98 @@
 [
   {
-    "_id": "stage_0_2025_br",
-    "image": "https://cdn2.unrealengine.com/stage-0-25-800x800-800x800-bc9c28d89a6d.png",
-    "sharedImage": "https://cdn2.unrealengine.com/stage-0-25-1920x1080-1920x1080-b5d0d2550514.jpg",
-    "gridTitle": "STAGE:0 Battle Royale 2025",
-    "description": "高校最強を目指せ！44チーム88名が決勝へ！日本最大 高校eスポーツの祭典『STAGE:0』フォートナイト部門は、 バトルロイヤルとゼロビルドの2部門で開催！ 予選の通過者44チーム88名は、決勝のステージへ！ 全ルールと詳細についてはこちらをご確認ください。fn.gg/stage0",
-    "embedColor": "E6153C"
+    "_id": "s36_division2",
+    "image": "https://cdn2.unrealengine.com/fnce-33-30-tileview-fncs-02-800x800-800x800-7a6c81600e5e.jpg",
+    "sharedImage": "https://cdn2.unrealengine.com/en-fnce-33-30-competitive-discoverytile-division2cup-1920x1080-1920x1080-af9665dddce6.jpg",
+    "gridTitle": "FNCS Division 2",
+    "description": "Unlock this divisional cup by qualifying from the previous season or by advancing through FNCS Division 3. Qualification to Division 1 is based on your performance across both Division 2 sessions each week. EU & NAC: top 40 will advance to Division 1; NAW, BR, ASIA, OCE, ME: top 20 will advance to Division 1.",
+    "embedColor": "F31630"
   },
   {
-    "_id": "stage_0_2025_zb",
-    "image": "https://cdn2.unrealengine.com/stage-0-25-800x800-800x800-bc9c28d89a6d.png",
-    "sharedImage": "https://cdn2.unrealengine.com/stage-0-25-1920x1080-1920x1080-b5d0d2550514.jpg",
-    "gridTitle": "STAGE:0 Zero Build 2025",
-    "description": "高校最強を目指せ！44チーム88名が決勝へ！日本最大 高校eスポーツの祭典『STAGE:0』フォートナイト部門は、 バトルロイヤルとゼロビルドの2部門で開催！ 予選の通過者44チーム88名は、決勝のステージへ！ 全ルールと詳細についてはこちらをご確認ください。fn.gg/stage0",
-    "embedColor": "E6153C"
+    "_id": "s36_duosconsole",
+    "image": "https://cdn2.unrealengine.com/fneco-35-00-consolevictorycup-comp-in-game-tab-800x800-rockerpunk-800x800-1c6c2dea5a9e.jpg",
+    "sharedImage": "https://cdn2.unrealengine.com/en-fnce-34-40-competitive-discoverytile-consolevictorycup-1920x1080-1920x1080-3b9ff45420d0.jpg",
+    "gridTitle": "Duos Console Victory Cash Cup",
+    "description": "It's time to duo up and compete for the opportunity to win a cash prize! Reach Round 2 where every duo who earns a Victory Royale in Round 2 will earn $200 USD - good luck and have fun!",
+    "embedColor": "FF6321"
+  },
+  {
+    "_id": "s36_major3_group",
+    "image": "https://cdn2.unrealengine.com/fnce-33-30-tileview-fncs-shield-800x800-800x800-00d5307a8068.jpg",
+    "sharedImage": "https://cdn2.unrealengine.com/en-fnce-33-30-competitive-discoverytile-major-1920x1080-1920x1080-a24ebbb7bf9a.jpg",
+    "gridTitle": "Fortnite Championship Series",
+    "description": "Advance to the Group Stage by qualifying through the Play-In! The Group Stage will consist of three groups in EU and NAC, and two groups in all other regions. Every Victory Royale in the Group Stage is an instant qualification to the Major Finals! The most consistent trios in each group (top five in EU and NAC, top 10 in all other regions) will also advance to the Major Finals.",
+    "embedColor": " FFFFFF"
+  },
+  {
+    "_id": "s36_ranked_duosreload",
+    "image": "https://cdn2.unrealengine.com/fnce-33-30-tileview-ranked-cups-01-800x800-800x800-4181af1ba9f1.jpg",
+    "sharedImage": "https://cdn2.unrealengine.com/en-fneco-33-00-competitive-discoverytile-rankedcups-1080x1920-1920x1080-715a21161bce.jpg",
+    "gridTitle": "Duos Ranked Cup (Reload)",
+    "description": "Compete against other ranked players! You may play 10 matches during the three hour window. In any session, earn 50 points to earn the \"Ranker's Uptopia 'Brella\" In-Game Glider! ",
+    "embedColor": "33337D"
+  },
+  {
+    "_id": "s36_ranked_triosbr",
+    "image": "https://cdn2.unrealengine.com/fnce-33-30-tileview-ranked-cups-02-800x800-800x800-b8716dd38b63.jpg",
+    "sharedImage": "https://cdn2.unrealengine.com/en-fneco-33-00-competitive-discoverytile-rankedcups-1080x1920-1920x1080-715a21161bce.jpg",
+    "gridTitle": "Trios Ranked Cup (Battle Royale)",
+    "description": "Compete against other ranked players! You may play 10 matches during the three hour window. In any session, earn 50 points to earn the \"Ranker's Uptopia 'Brella\" In-Game Glider! ",
+    "embedColor": "33337D"
+  },
+  {
+    "_id": "s36_playstation",
+    "image": "https://cdn2.unrealengine.com/fnce-33-30-tileview-playstation-cup-01-800x800-800x800-a7f808caf584.jpg",
+    "sharedImage": "https://cdn2.unrealengine.com/en-fneco-33-00-competitive-discoverytile-playstationcup-1080x1920-1920x1080-b08ab167caf0.jpg",
+    "gridTitle": "PlayStation Cup",
+    "description": "Compete against other PlayStation players in Battle Royale for an opportunity to earn a cash prize! This event occurs across multiple stages. There will be a single qualifier session, with the top 100 players advancing to the Finals. Players who earn 8 points or more in the qualifier session will earn an in-game spray!",
+    "embedColor": "0039F5"
+  },
+  {
+    "_id": "s36_division3",
+    "image": "https://cdn2.unrealengine.com/fnce-33-30-tileview-fncs-03-800x800-800x800-60fed7505d2e.jpg",
+    "sharedImage": "https://cdn2.unrealengine.com/en-fnce-33-30-competitive-discoverytile-division3cup-1920x1080-1920x1080-953c3abca82b.jpg",
+    "gridTitle": "FNCS Division 3",
+    "description": "Unlock this divisional cup by reaching Gold or higher in Battle Royale, Zero Build, or Reload Ranked. Qualification to Division 2 is based on your performance across both Division 3 sessions each week. EU: top 300 will advance to Division 2; NAC: top 200 will advance to Division 2; NAW, BR, ASIA, OCE: top 100 will advance to Division 2.",
+    "embedColor": "F31630"
+  },
+  {
+    "_id": "s36_major3_finals",
+    "image": "https://cdn2.unrealengine.com/fnce-33-30-tileview-fncs-shield-800x800-800x800-dc66b11af01f.jpg",
+    "sharedImage": "https://cdn2.unrealengine.com/de-fnce-33-30-competitive-discoverytile-major-1920x1080-1920x1080-684b777f7cd1.jpg",
+    "gridTitle": "Fortnite Championship Series",
+    "description": "This is a two-day event with 12 matches to crown the FNCS Major champions. The Major champions will not only claim their share of the prize pool — and their title as the best Fortnite players in the region — but will also wield the Blade of Champions for the following season, displaying their achievement for all to see!",
+    "embedColor": " FFFFFF"
+  },
+  {
+    "_id": "s36_major3_lcq",
+    "image": "https://cdn2.unrealengine.com/fnce-33-30-tileview-fncs-shield-800x800-800x800-e7da78a4c623.jpg",
+    "sharedImage": "https://cdn2.unrealengine.com/en-fnce-33-30-competitive-discoverytile-major-1920x1080-1920x1080-a24ebbb7bf9a.jpg",
+    "gridTitle": "Fortnite Championship Series",
+    "description": "The Last Chance Qualifier is open to all players in Divisions 1, 2 and 3 (Note: players must participate in a FNCS Division 3 Cup or higher this season to rank in their respective Division). The top 33 teams in each region will advance to the Last Chance Lobby, where the Victory Royale winners of each match will earn their ticket to the Major Finals!",
+    "embedColor": "FFFFFF"
+  },
+  {
+    "_id": "s36_major3_playin",
+    "image": "https://cdn2.unrealengine.com/fnce-33-30-tileview-fncs-shield-800x800-800x800-09342c334b49.jpg",
+    "sharedImage": "https://cdn2.unrealengine.com/en-fnce-33-30-competitive-discoverytile-major-1920x1080-1920x1080-a24ebbb7bf9a.jpg",
+    "gridTitle": "Fortnite Championship Series",
+    "description": "Reach FNCS Division 1 to unlock this event. The Play-In Stage will consist of two days of competition with a cumulative leaderboard. The top trios on the leaderboard (top 99 in EU and NAC, top 66 in all other regions) will then be seeded into the Group Stage.",
+    "embedColor": "FFFFFF"
+  },
+  {
+    "_id": "s36_ranked_solobr",
+    "image": "https://cdn2.unrealengine.com/fnce-33-30-tileview-ranked-cups-03-800x800-800x800-3886bb3a3aa3.jpg",
+    "sharedImage": "https://cdn2.unrealengine.com/en-fneco-33-00-competitive-discoverytile-rankedcups-1080x1920-1920x1080-715a21161bce.jpg",
+    "gridTitle": "Solo Ranked Cup (Battle Royale)",
+    "description": "Compete against other ranked players! You may play 10 matches during the three hour window. In any session, earn 50 points to earn the \"Ranker's Uptopia 'Brella\" In-Game Glider! ",
+    "embedColor": "33337D"
+  },
+  {
+    "_id": "s36_division1",
+    "image": "https://cdn2.unrealengine.com/fnce-33-30-tileview-fncs-01-800x800-800x800-c8bda9358f90.jpg",
+    "sharedImage": "https://cdn2.unrealengine.com/en-fnce-33-30-competitive-discoverytile-division1cup-1920x1080-1920x1080-a533528a1a6b.jpg",
+    "gridTitle": "FNCS Division 1",
+    "description": "Unlock this divisional cup by qualifying from the previous season, or by advancing through FNCS Division 2. Qualification to the Division 1 Weekly Final is based on your performance across both Division 1 sessions each week, with the top 33 teams in each region qualifying to the Weekly Final.",
+    "embedColor": "F31630"
   }
 ]
