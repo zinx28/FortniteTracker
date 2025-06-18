@@ -1,33 +1,34 @@
 [
   {
-    "_id": "4b0a5a94-a74a-4da8-94e9-c9c38a9c0e05",
-    "image": "https://cdn2.unrealengine.com/fortnite-battle-royale-super-thumbnail-576x576-ffc70bb0bf08.jpg",
-    "sharedImage": "https://cdn2.unrealengine.com/fortnite-battle-royale-super-social-1920x1080-0ade1d2279d8.jpg",
-    "gridTitle": "Unleash Your True Power in Fortnite Battle Royale: Super!",
-    "urlPattern": "https://www.fortnite.com/news/unleash-your-true-power-in-fortnite-battle-royale-super",
-    "description": "Aspiring heroes must hone their skills and harness their powers to defeat Mask Maker Daigo and defend the Island in Fortnite BR Chapter 6 Season 3: Super! "
+    "_id": "9a1c5278-b729-48a8-8a6b-a98624ffe59c",
+    "image": "https://cdn2.unrealengine.com/fortnite-ballistic-k-zone-commons-thumbnail-576x576-8bed2cba528e.jpg",
+    "sharedImage": "https://cdn2.unrealengine.com/fortnite-ballistic-k-zone-commons-1920x1080-29f7dc58ebeb.jpg",
+    "gridTitle": "Fortnite Ballistic v36.10: K-Zone Commons Update",
+    "urlPattern": "https://www.fortnite.com/news/fortnite-ballistic-v36-10-k-zone-commons-update",
+    "description": "Fortnite Ballistic v36.10 brings the K-Zone Commons shell map, Machine Pistol, Mid Mist Grenade, and pre-game warmup."
   },
   {
-    "_id": "2d7a8a85-a4f2-45e6-8447-b9ab0bfaa32a",
-    "image": "https://cdn2.unrealengine.com/fortnite-og-chapter-1-season-4-thumb-576x576-de6681c270ed.jpg",
-    "sharedImage": "https://cdn2.unrealengine.com/fortnite-og-chapter-1-season-4-social-1920x1080-20c00609114e.jpg",
-    "gridTitle": "Brace for Impact: Season 4 Hits Fortnite OG!",
-    "urlPattern": "https://www.fortnite.com/news/brace-for-impact-season-4-hits-fortnite-og",
-    "description": "Fortnite OG dives headfirst into Season 4, so dust off your Thermal Rifle and prepare for a (rocket) blast from the past! Experience the Blast Off event."
+    "_id": "0e91e91e-0ef6-4fb8-993b-68c28537fa94",
+    "image": "https://cdn2.unrealengine.com/fortnite-blitz-royale-1920x1080-9946411a3a9f.jpg",
+    "sharedImage": "https://cdn2.unrealengine.com/fortnite-blitz-royale-social-1920x1080-c16d514d5b75.jpg",
+    "gridTitle": "Fortnite Blitz Royale: Full Throttle. Phone Ready.",
+    "urlPattern": "https://www.fortnite.com/news/fortnite-blitz-royale-full-throttle-phone-ready",
+    "description": "Fortnite Blitz Royale: roguelike meets battle royale with four weeks of major updates!"
   },
   {
-    "_id": "6b1c6bbf-849f-4cd3-98e9-9c218e5a488e",
-    "image": "https://cdn2.unrealengine.com/lego-fortnite-sonia-thumbnail-576x576-f03ff994c559.jpg",
-    "sharedImage": "https://cdn2.unrealengine.com/fortnite-sonia-outfit-lego-style-1920x1080-38d3e37d1e97.jpg",
-    "gridTitle": "Super Stuff is Happening in LEGO® Fortnite Before Its Super Update",
-    "urlPattern": "https://www.fortnite.com/news/super-stuff-is-happening-in-lego-fortnite-before-its-super-update",
-    "description": "In the lead-up to LEGO Fortnite's super update, check out what's happening including the appearance of mysterious Spires and a new LEGO Pass!"
+    "_id": "b5100b4b-2401-4b07-9980-6533a7038806",
+    "image": "https://cdn2.unrealengine.com/fortnite-festival-bruno-mars-thumbnail-576x576-9595fa0f10ac.jpg",
+    "sharedImage": "https://cdn2.unrealengine.com/fortnite-festival-season-9-1920x1080-eb0d768be513.jpg",
+    "gridTitle": "Bruno Mars is Home in Fortnite Festival Season 9!",
+    "urlPattern": "https://www.fortnite.com/news/bruno-mars-is-home-in-fortnite-festival-season-9",
+    "description": "The door is left open for the next Fortnite Festival Icon… Bruno Mars! Bruno makes a grand entrance with new Outfits, Jam Tracks, and more."
   },
   {
-    "_id": "2116b3fb-173d-4e55-ab29-a1aab1599fcb",
-    "image": "https://cdn2.unrealengine.com/fortnite-rankers-utopia-umbrella-thumbnail-576x576-0f053ec1846b.jpg",
-    "gridTitle": "Fortnite Battle Royale C6S3 Competitive Details",
-    "urlPattern": "https://www.fortnite.com/news/fortnite-br-chapter-6-season-3-competitive-details",
-    "description": ""
+    "_id": "35197ce3-78de-4610-a8fe-da7b407037ae",
+    "image": "https://cdn2.unrealengine.com/lego-fortnite-expeditions-thumbnail-576x576-f4a7bcddec17.jpg",
+    "sharedImage": "https://cdn2.unrealengine.com/lego-fortnite-expeditions-social-1920x1080-273084dc2f6f.jpg",
+    "gridTitle": "Squad Up and Save the Day in LEGO® Fortnite Expeditions!",
+    "urlPattern": "https://www.fortnite.com/news/squad-up-and-save-the-day-in-lego-fortnite-expeditions",
+    "description": "Time to demolish evil. In LEGO Fortnite Expeditions, choose your path of superhero study and team up in 4-player cooperative Missions! "
   }
 ]

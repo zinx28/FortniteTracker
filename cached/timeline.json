@@ -130,24 +130,9 @@
     "activeSince": "2025-04-03T00:00:00.000Z"
   },
   {
-    "eventType": "EventFlag.Event_SparksS08",
-    "activeUntil": "2025-06-17T08:00:00.000Z",
-    "activeSince": "2025-04-08T08:00:00.000Z"
-  },
-  {
     "eventType": "EventFlag.Event_ReloadQuests_Dashberry_Kickstart",
     "activeUntil": "2025-06-27T11:00:00.000Z",
     "activeSince": "2025-04-15T11:00:00.000Z"
-  },
-  {
-    "eventType": "EventFlag.Event_SparksS08_WeeklyQuests",
-    "activeUntil": "2025-06-17T08:00:00.000Z",
-    "activeSince": "2025-04-18T00:00:00.000Z"
-  },
-  {
-    "eventType": "EventFlag.LobbySeason35",
-    "activeUntil": "2025-06-13T13:00:00.000Z",
-    "activeSince": "2025-04-25T13:00:00.000Z"
   },
   {
     "eventType": "EventFlag.YarrrTwo",
@@ -155,34 +140,14 @@
     "activeSince": "2025-05-15T00:00:00.000Z"
   },
   {
-    "eventType": "EventFlag.Event_Mobile_LoginReward",
-    "activeUntil": "2025-06-17T13:00:00.000Z",
-    "activeSince": "2025-05-23T13:00:00.000Z"
-  },
-  {
     "eventType": "EventFlag.STWFennix",
     "activeUntil": "2025-06-19T00:00:00.000Z",
     "activeSince": "2025-05-29T00:00:00.000Z"
   },
   {
-    "eventType": "EventFlag.Event_SparksS08_PeanutButter",
-    "activeUntil": "2025-06-17T03:59:00.000Z",
-    "activeSince": "2025-05-30T19:00:00.000Z"
-  },
-  {
     "eventType": "EventFlag.LobbySeason36",
     "activeUntil": "2025-08-15T13:00:00.000Z",
     "activeSince": "2025-06-01T13:00:00.000Z"
-  },
-  {
-    "eventType": "EventFlag.Event_S35_LoginReward",
-    "activeUntil": "2025-06-11T04:00:00.000Z",
-    "activeSince": "2025-06-03T04:00:00.000Z"
-  },
-  {
-    "eventType": "EventFlag.HordeV3.Week06",
-    "activeUntil": "2025-06-12T00:00:00.000Z",
-    "activeSince": "2025-06-05T00:00:00.000Z"
   },
   {
     "eventType": "EventFlag.Event_Figment_S04",
@@ -213,5 +178,65 @@
     "eventType": "EventFlag.Event_DelMar_Season07",
     "activeUntil": "2025-08-08T06:00:00.000Z",
     "activeSince": "2025-06-07T19:00:00.000Z"
+  },
+  {
+    "eventType": "EventFlag.HordeV3.Week09",
+    "activeUntil": "2025-06-19T00:00:00.000Z",
+    "activeSince": "2025-06-12T00:00:00.000Z"
+  },
+  {
+    "eventType": "EventFlag.Event_Mars_Phase1",
+    "activeUntil": "2025-10-07T07:00:00.000Z",
+    "activeSince": "2025-06-17T08:00:00.000Z"
+  },
+  {
+    "eventType": "EventFlag.Event_ForbiddenFruitQuests_Kickstart_01",
+    "activeUntil": "2025-07-15T13:00:00.000Z",
+    "activeSince": "2025-06-17T13:00:00.000Z"
+  },
+  {
+    "eventType": "EventFlag.Event_ForbiddenFruitQuests_Evergreen",
+    "activeUntil": "2027-06-15T13:00:00.000Z",
+    "activeSince": "2025-06-17T13:00:00.000Z"
+  },
+  {
+    "eventType": "EventFlag.Event_ForbiddenFruitQuests_Ecosystem_01",
+    "activeUntil": "2025-07-15T13:00:00.000Z",
+    "activeSince": "2025-06-17T13:00:00.000Z"
+  },
+  {
+    "eventType": "EventFlag.Event_S36_IslandStories",
+    "activeUntil": "2025-08-07T13:00:00.000Z",
+    "activeSince": "2025-06-17T13:00:00.000Z"
+  },
+  {
+    "eventType": "EventFlag.Event_S36_WeaponExpertise",
+    "activeUntil": "2025-08-08T13:00:00.000Z",
+    "activeSince": "2025-06-17T13:00:00.000Z"
+  },
+  {
+    "eventType": "EventFlag.Event_ForbiddenFruitQuests_MapDiscovery_01",
+    "activeUntil": "2025-07-15T13:00:00.000Z",
+    "activeSince": "2025-06-17T13:00:00.000Z"
+  },
+  {
+    "eventType": "EventFlag.Event_Mars_Launch",
+    "activeUntil": "2025-10-07T07:00:00.000Z",
+    "activeSince": "2025-06-18T08:00:00.000Z"
+  },
+  {
+    "eventType": "EventFlag.Event_SparksS09",
+    "activeUntil": "2025-08-26T08:00:00.000Z",
+    "activeSince": "2025-06-18T08:00:00.000Z"
+  },
+  {
+    "eventType": "EventFlag.Event_SparksS09_Daily",
+    "activeUntil": "2025-08-26T08:00:00.000Z",
+    "activeSince": "2025-06-18T08:00:00.000Z"
+  },
+  {
+    "eventType": "EventFlag.Event_SparksS09_PlayNewFeatured_W01",
+    "activeUntil": "2025-06-27T00:00:00.000Z",
+    "activeSince": "2025-06-18T08:00:00.000Z"
   }
 ]
