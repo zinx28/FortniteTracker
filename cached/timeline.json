@@ -80,71 +80,6 @@
     "activeSince": "2025-02-18T09:00:00.000Z"
   },
   {
-    "eventType": "EventFlag.LobbyStW.Adventure",
-    "activeUntil": "2025-06-19T00:00:00.000Z",
-    "activeSince": "2025-04-03T00:00:00.000Z"
-  },
-  {
-    "eventType": "EventFlag.PassiveIceStorms",
-    "activeUntil": "2025-06-19T00:00:00.000Z",
-    "activeSince": "2025-04-03T00:00:00.000Z"
-  },
-  {
-    "eventType": "EventFlag.PassiveFireStorms",
-    "activeUntil": "2025-06-19T00:00:00.000Z",
-    "activeSince": "2025-04-03T00:00:00.000Z"
-  },
-  {
-    "eventType": "EventFlag.ActiveLightningStorms",
-    "activeUntil": "2025-06-19T00:00:00.000Z",
-    "activeSince": "2025-04-03T00:00:00.000Z"
-  },
-  {
-    "eventType": "EventFlag.PassiveMiniBosses",
-    "activeUntil": "2025-06-19T00:00:00.000Z",
-    "activeSince": "2025-04-03T00:00:00.000Z"
-  },
-  {
-    "eventType": "EventFlag.MissionAlert.MegaAlert",
-    "activeUntil": "2025-06-19T00:00:00.000Z",
-    "activeSince": "2025-04-03T00:00:00.000Z"
-  },
-  {
-    "eventType": "EventFlag.ElderGroupMissions",
-    "activeUntil": "2025-06-19T00:00:00.000Z",
-    "activeSince": "2025-04-03T00:00:00.000Z"
-  },
-  {
-    "eventType": "EventFlag.Phoenix.Adventure",
-    "activeUntil": "2025-06-19T00:00:00.000Z",
-    "activeSince": "2025-04-03T00:00:00.000Z"
-  },
-  {
-    "eventType": "EventFlag.Phoenix.Adventure.Quests",
-    "activeUntil": "2025-06-19T00:00:00.000Z",
-    "activeSince": "2025-04-03T00:00:00.000Z"
-  },
-  {
-    "eventType": "EventFlag.HordeV3",
-    "activeUntil": "2025-06-19T00:00:00.000Z",
-    "activeSince": "2025-04-03T00:00:00.000Z"
-  },
-  {
-    "eventType": "EventFlag.Event_ReloadQuests_Dashberry_Kickstart",
-    "activeUntil": "2025-06-27T11:00:00.000Z",
-    "activeSince": "2025-04-15T11:00:00.000Z"
-  },
-  {
-    "eventType": "EventFlag.YarrrTwo",
-    "activeUntil": "2025-06-19T00:00:00.000Z",
-    "activeSince": "2025-05-15T00:00:00.000Z"
-  },
-  {
-    "eventType": "EventFlag.STWFennix",
-    "activeUntil": "2025-06-19T00:00:00.000Z",
-    "activeSince": "2025-05-29T00:00:00.000Z"
-  },
-  {
     "eventType": "EventFlag.LobbySeason36",
     "activeUntil": "2025-08-15T13:00:00.000Z",
     "activeSince": "2025-06-01T13:00:00.000Z"
@@ -166,28 +101,18 @@
   },
   {
     "eventType": "EventFlag.Event_Juno_S04",
-    "activeUntil": "2025-08-08T07:00:00.000Z",
+    "activeUntil": "2025-08-07T07:00:00.000Z",
     "activeSince": "2025-06-07T18:30:00.000Z"
   },
   {
-    "eventType": "EventFlag.Event_DelMar_Season07_Ranked",
-    "activeUntil": "2025-08-08T06:00:00.000Z",
-    "activeSince": "2025-06-07T19:00:00.000Z"
-  },
-  {
     "eventType": "EventFlag.Event_DelMar_Season07",
-    "activeUntil": "2025-08-08T06:00:00.000Z",
+    "activeUntil": "2025-08-07T06:00:00.000Z",
     "activeSince": "2025-06-07T19:00:00.000Z"
   },
   {
-    "eventType": "EventFlag.HordeV3.Week09",
-    "activeUntil": "2025-06-19T00:00:00.000Z",
-    "activeSince": "2025-06-12T00:00:00.000Z"
-  },
-  {
-    "eventType": "EventFlag.Event_Mars_Phase1",
-    "activeUntil": "2025-10-07T07:00:00.000Z",
-    "activeSince": "2025-06-17T08:00:00.000Z"
+    "eventType": "EventFlag.Event_DelMar_Season07_Ranked",
+    "activeUntil": "2025-08-07T06:00:00.000Z",
+    "activeSince": "2025-06-07T19:00:00.000Z"
   },
   {
     "eventType": "EventFlag.Event_ForbiddenFruitQuests_Ecosystem_01",
@@ -195,13 +120,13 @@
     "activeSince": "2025-06-17T09:30:00.000Z"
   },
   {
-    "eventType": "EventFlag.Event_ForbiddenFruitQuests_MapDiscovery_01",
-    "activeUntil": "2025-07-15T13:00:00.000Z",
+    "eventType": "EventFlag.Event_ForbiddenFruitQuests_Kickstart_01",
+    "activeUntil": "2025-08-12T13:00:00.000Z",
     "activeSince": "2025-06-17T09:30:00.000Z"
   },
   {
-    "eventType": "EventFlag.Event_ForbiddenFruitQuests_Kickstart_01",
-    "activeUntil": "2025-07-15T13:00:00.000Z",
+    "eventType": "EventFlag.Event_ForbiddenFruitQuests_MapDiscovery_01",
+    "activeUntil": "2025-08-12T13:00:00.000Z",
     "activeSince": "2025-06-17T09:30:00.000Z"
   },
   {
@@ -225,6 +150,11 @@
     "activeSince": "2025-06-18T08:00:00.000Z"
   },
   {
+    "eventType": "EventFlag.Event_Mars_Phase1",
+    "activeUntil": "2025-10-07T07:00:00.000Z",
+    "activeSince": "2025-06-18T08:00:00.000Z"
+  },
+  {
     "eventType": "EventFlag.Event_SparksS09",
     "activeUntil": "2025-08-26T08:00:00.000Z",
     "activeSince": "2025-06-18T08:00:00.000Z"
@@ -235,8 +165,383 @@
     "activeSince": "2025-06-18T08:00:00.000Z"
   },
   {
-    "eventType": "EventFlag.Event_SparksS09_PlayNewFeatured_W01",
-    "activeUntil": "2025-06-27T00:00:00.000Z",
+    "eventType": "EventFlag.Mayday",
+    "activeUntil": "2025-09-04T00:00:00.000Z",
+    "activeSince": "2025-06-19T00:00:00.000Z"
+  },
+  {
+    "eventType": "EventFlag.Mayday.Quests",
+    "activeUntil": "2025-09-04T00:00:00.000Z",
+    "activeSince": "2025-06-19T00:00:00.000Z"
+  },
+  {
+    "eventType": "EventFlag.LobbyStW.RoadTrip",
+    "activeUntil": "2025-09-04T00:00:00.000Z",
+    "activeSince": "2025-06-19T00:00:00.000Z"
+  },
+  {
+    "eventType": "EventFlag.PassiveIceStorms",
+    "activeUntil": "2025-09-04T00:00:00.000Z",
+    "activeSince": "2025-06-19T00:00:00.000Z"
+  },
+  {
+    "eventType": "EventFlag.ActiveFireStorms",
+    "activeUntil": "2025-09-04T00:00:00.000Z",
+    "activeSince": "2025-06-19T00:00:00.000Z"
+  },
+  {
+    "eventType": "EventFlag.PassiveLightningStorms",
+    "activeUntil": "2025-09-04T00:00:00.000Z",
+    "activeSince": "2025-06-19T00:00:00.000Z"
+  },
+  {
+    "eventType": "EventFlag.PassiveMiniBosses",
+    "activeUntil": "2025-09-04T00:00:00.000Z",
+    "activeSince": "2025-06-19T00:00:00.000Z"
+  },
+  {
+    "eventType": "EventFlag.MissionAlert.MegaAlert",
+    "activeUntil": "2025-09-04T00:00:00.000Z",
+    "activeSince": "2025-06-19T00:00:00.000Z"
+  },
+  {
+    "eventType": "EventFlag.ElderGroupMissions",
+    "activeUntil": "2025-09-04T00:00:00.000Z",
+    "activeSince": "2025-06-19T00:00:00.000Z"
+  },
+  {
+    "eventType": "EventFlag.Phoenix.RoadTrip",
+    "activeUntil": "2025-09-04T00:00:00.000Z",
+    "activeSince": "2025-06-19T00:00:00.000Z"
+  },
+  {
+    "eventType": "EventFlag.Phoenix.RoadTrip.Quests",
+    "activeUntil": "2025-09-04T00:00:00.000Z",
+    "activeSince": "2025-06-19T00:00:00.000Z"
+  },
+  {
+    "eventType": "EventFlag.Mayday.Quests.1020",
+    "activeUntil": "2025-09-04T00:00:00.000Z",
+    "activeSince": "2025-06-19T00:00:00.000Z"
+  },
+  {
+    "eventType": "EventFlag.Phoenix.RoadTrip.Imposter",
+    "activeUntil": "2025-07-24T00:00:00.000Z",
+    "activeSince": "2025-06-19T00:00:00.000Z"
+  },
+  {
+    "eventType": "EventFlag.Event_Mars_Phase2",
+    "activeUntil": "2025-10-07T07:00:00.000Z",
+    "activeSince": "2025-06-24T08:00:00.000Z"
+  },
+  {
+    "eventType": "EventFlag.Event_SparksS09_WeeklyQuests",
+    "activeUntil": "2025-08-26T08:00:00.000Z",
+    "activeSince": "2025-06-27T00:00:00.000Z"
+  },
+  {
+    "eventType": "EventFlag.Event_ReloadQuests_TimberStake_Kickstart",
+    "activeUntil": "2025-10-03T11:00:00.000Z",
+    "activeSince": "2025-06-27T11:00:00.000Z"
+  },
+  {
+    "eventType": "EventFlag.Season9.Phase2",
+    "activeUntil": "2025-08-07T00:00:00.000Z",
+    "activeSince": "2025-07-03T00:00:00.000Z"
+  },
+  {
+    "eventType": "EventFlag.Mayday.Quests.Phase4",
+    "activeUntil": "2025-07-17T00:00:00.000Z",
+    "activeSince": "2025-07-10T00:00:00.000Z"
+  },
+  {
+    "eventType": "EventFlag.Event_SparksS09_PlayNewFeatured_W04",
+    "activeUntil": "2025-07-18T00:00:00.000Z",
+    "activeSince": "2025-07-11T00:00:00.000Z"
+  },
+  {
+    "eventType": "EventFlag.Event_S36_MidSeasonCharacter_Quests",
+    "activeUntil": "2025-08-08T13:00:00.000Z",
+    "activeSince": "2025-07-11T13:00:00.000Z"
+  },
+  {
+    "eventType": "EventFlag.Event_Mars_Phase3",
+    "activeUntil": "2025-10-07T07:00:00.000Z",
+    "activeSince": "2025-07-15T08:00:00.000Z"
+  },
+  {
+    "eventType": "EventFlag.Event_Mars_Expert",
+    "activeUntil": "2025-10-07T07:00:00.000Z",
+    "activeSince": "2025-07-15T08:00:00.000Z"
+  },
+  {
+    "eventType": "EventFlag.Event_DelMar_Season01_Dailies",
+    "activeUntil": "2026-01-01T14:00:00.000Z",
+    "activeSince": "2024-04-09T13:00:00.000Z"
+  },
+  {
+    "eventType": "EventFlag.Event_Juno_Osiris_TownRewards",
+    "activeUntil": "2026-04-15T13:00:00.000Z",
+    "activeSince": "2024-05-03T13:00:00.000Z"
+  },
+  {
+    "eventType": "EventFlag.Event_Juno_Hardcore",
+    "activeUntil": "2026-07-15T08:00:00.000Z",
+    "activeSince": "2024-06-11T08:00:00.000Z"
+  },
+  {
+    "eventType": "EventFlag.Event_DelMar_QuestPack_02",
+    "activeUntil": "2025-10-02T00:00:00.000Z",
+    "activeSince": "2024-07-26T00:00:00.000Z"
+  },
+  {
+    "eventType": "EventFlag.Event_Ecosystem_DailyBonusGoals",
+    "activeUntil": "2028-11-17T07:00:00.000Z",
+    "activeSince": "2024-11-28T09:00:00.000Z"
+  },
+  {
+    "eventType": "EventFlag.Event_ JunoQuestRepeatable  ",
+    "activeUntil": "2026-02-11T05:00:00.000Z",
+    "activeSince": "2024-11-30T05:00:00.000Z"
+  },
+  {
+    "eventType": "EventFlag.Event_Evergreen_DailyQuests",
+    "activeUntil": "2028-05-05T06:00:00.000Z",
+    "activeSince": "2024-12-01T07:00:00.000Z"
+  },
+  {
+    "eventType": "EventFlag.Event_BR_Ch06_MapDiscovery",
+    "activeUntil": "2025-12-01T07:00:00.000Z",
+    "activeSince": "2024-12-01T09:00:00.000Z"
+  },
+  {
+    "eventType": "EventFlag.Event_FigmentQuests_Ch01_MapDiscovery",
+    "activeUntil": "2025-11-28T14:00:00.000Z",
+    "activeSince": "2024-12-06T14:00:00.000Z"
+  },
+  {
+    "eventType": "EventFlag.Event_FigmentQuests_Evergreen",
+    "activeUntil": "2026-11-27T14:00:00.000Z",
+    "activeSince": "2024-12-06T14:00:00.000Z"
+  },
+  {
+    "eventType": "EventFlag.Event_ReloadQuests_Ch06_MapDiscovery",
+    "activeUntil": "2025-11-28T14:00:00.000Z",
+    "activeSince": "2024-12-06T14:00:00.000Z"
+  },
+  {
+    "eventType": "EventFlag.Event_S33_FeralCorgiQuests",
+    "activeUntil": "2025-12-31T14:00:00.000Z",
+    "activeSince": "2024-12-11T14:00:00.000Z"
+  },
+  {
+    "eventType": "EventFlag.Event_SproutQuestDaily",
+    "activeUntil": "2026-02-13T09:00:00.000Z",
+    "activeSince": "2024-12-13T07:00:00.000Z"
+  },
+  {
+    "eventType": "EventFlag.BetaStorms.B",
+    "activeUntil": "2027-01-21T00:00:00.000Z",
+    "activeSince": "2025-01-23T00:00:00.000Z"
+  },
+  {
+    "eventType": "EventFlag.STWHuntMonster",
+    "activeUntil": "2027-01-21T00:00:00.000Z",
+    "activeSince": "2025-01-23T00:00:00.000Z"
+  },
+  {
+    "eventType": "EventFlag.Event_STW_DailyQuests",
+    "activeUntil": "2029-02-07T07:00:00.000Z",
+    "activeSince": "2025-02-18T09:00:00.000Z"
+  },
+  {
+    "eventType": "EventFlag.LobbySeason36",
+    "activeUntil": "2025-08-15T13:00:00.000Z",
+    "activeSince": "2025-06-01T13:00:00.000Z"
+  },
+  {
+    "eventType": "EventFlag.Event_Figment_S04",
+    "activeUntil": "2025-08-09T04:00:00.000Z",
+    "activeSince": "2025-06-06T04:00:00.000Z"
+  },
+  {
+    "eventType": "EventFlag.Event_FigmentQuests_S04",
+    "activeUntil": "2025-08-08T13:00:00.000Z",
+    "activeSince": "2025-06-07T13:00:00.000Z"
+  },
+  {
+    "eventType": "EventFlag.Event_S36_WeeklyCreative",
+    "activeUntil": "2025-08-07T13:00:00.000Z",
+    "activeSince": "2025-06-07T13:00:00.000Z"
+  },
+  {
+    "eventType": "EventFlag.Event_Juno_S04",
+    "activeUntil": "2025-08-07T07:00:00.000Z",
+    "activeSince": "2025-06-07T18:30:00.000Z"
+  },
+  {
+    "eventType": "EventFlag.Event_DelMar_Season07",
+    "activeUntil": "2025-08-07T06:00:00.000Z",
+    "activeSince": "2025-06-07T19:00:00.000Z"
+  },
+  {
+    "eventType": "EventFlag.Event_DelMar_Season07_Ranked",
+    "activeUntil": "2025-08-07T06:00:00.000Z",
+    "activeSince": "2025-06-07T19:00:00.000Z"
+  },
+  {
+    "eventType": "EventFlag.Event_ForbiddenFruitQuests_Kickstart_01",
+    "activeUntil": "2025-08-12T13:00:00.000Z",
+    "activeSince": "2025-06-17T09:30:00.000Z"
+  },
+  {
+    "eventType": "EventFlag.Event_ForbiddenFruitQuests_MapDiscovery_01",
+    "activeUntil": "2025-08-12T13:00:00.000Z",
+    "activeSince": "2025-06-17T09:30:00.000Z"
+  },
+  {
+    "eventType": "EventFlag.Event_ForbiddenFruitQuests_Evergreen",
+    "activeUntil": "2027-06-15T13:00:00.000Z",
+    "activeSince": "2025-06-17T13:00:00.000Z"
+  },
+  {
+    "eventType": "EventFlag.Event_S36_IslandStories",
+    "activeUntil": "2025-08-07T13:00:00.000Z",
+    "activeSince": "2025-06-17T13:00:00.000Z"
+  },
+  {
+    "eventType": "EventFlag.Event_S36_WeaponExpertise",
+    "activeUntil": "2025-08-08T13:00:00.000Z",
+    "activeSince": "2025-06-17T13:00:00.000Z"
+  },
+  {
+    "eventType": "EventFlag.Event_Mars_Launch",
+    "activeUntil": "2025-10-07T07:00:00.000Z",
     "activeSince": "2025-06-18T08:00:00.000Z"
+  },
+  {
+    "eventType": "EventFlag.Event_Mars_Phase1",
+    "activeUntil": "2025-10-07T07:00:00.000Z",
+    "activeSince": "2025-06-18T08:00:00.000Z"
+  },
+  {
+    "eventType": "EventFlag.Event_SparksS09",
+    "activeUntil": "2025-08-26T08:00:00.000Z",
+    "activeSince": "2025-06-18T08:00:00.000Z"
+  },
+  {
+    "eventType": "EventFlag.Event_SparksS09_Daily",
+    "activeUntil": "2025-08-26T08:00:00.000Z",
+    "activeSince": "2025-06-18T08:00:00.000Z"
+  },
+  {
+    "eventType": "EventFlag.Mayday",
+    "activeUntil": "2025-09-04T00:00:00.000Z",
+    "activeSince": "2025-06-19T00:00:00.000Z"
+  },
+  {
+    "eventType": "EventFlag.Mayday.Quests",
+    "activeUntil": "2025-09-04T00:00:00.000Z",
+    "activeSince": "2025-06-19T00:00:00.000Z"
+  },
+  {
+    "eventType": "EventFlag.LobbyStW.RoadTrip",
+    "activeUntil": "2025-09-04T00:00:00.000Z",
+    "activeSince": "2025-06-19T00:00:00.000Z"
+  },
+  {
+    "eventType": "EventFlag.PassiveIceStorms",
+    "activeUntil": "2025-09-04T00:00:00.000Z",
+    "activeSince": "2025-06-19T00:00:00.000Z"
+  },
+  {
+    "eventType": "EventFlag.ActiveFireStorms",
+    "activeUntil": "2025-09-04T00:00:00.000Z",
+    "activeSince": "2025-06-19T00:00:00.000Z"
+  },
+  {
+    "eventType": "EventFlag.PassiveLightningStorms",
+    "activeUntil": "2025-09-04T00:00:00.000Z",
+    "activeSince": "2025-06-19T00:00:00.000Z"
+  },
+  {
+    "eventType": "EventFlag.PassiveMiniBosses",
+    "activeUntil": "2025-09-04T00:00:00.000Z",
+    "activeSince": "2025-06-19T00:00:00.000Z"
+  },
+  {
+    "eventType": "EventFlag.MissionAlert.MegaAlert",
+    "activeUntil": "2025-09-04T00:00:00.000Z",
+    "activeSince": "2025-06-19T00:00:00.000Z"
+  },
+  {
+    "eventType": "EventFlag.ElderGroupMissions",
+    "activeUntil": "2025-09-04T00:00:00.000Z",
+    "activeSince": "2025-06-19T00:00:00.000Z"
+  },
+  {
+    "eventType": "EventFlag.Phoenix.RoadTrip",
+    "activeUntil": "2025-09-04T00:00:00.000Z",
+    "activeSince": "2025-06-19T00:00:00.000Z"
+  },
+  {
+    "eventType": "EventFlag.Phoenix.RoadTrip.Quests",
+    "activeUntil": "2025-09-04T00:00:00.000Z",
+    "activeSince": "2025-06-19T00:00:00.000Z"
+  },
+  {
+    "eventType": "EventFlag.Mayday.Quests.1020",
+    "activeUntil": "2025-09-04T00:00:00.000Z",
+    "activeSince": "2025-06-19T00:00:00.000Z"
+  },
+  {
+    "eventType": "EventFlag.Phoenix.RoadTrip.Imposter",
+    "activeUntil": "2025-07-24T00:00:00.000Z",
+    "activeSince": "2025-06-19T00:00:00.000Z"
+  },
+  {
+    "eventType": "EventFlag.Event_Mars_Phase2",
+    "activeUntil": "2025-10-07T07:00:00.000Z",
+    "activeSince": "2025-06-24T08:00:00.000Z"
+  },
+  {
+    "eventType": "EventFlag.Event_SparksS09_WeeklyQuests",
+    "activeUntil": "2025-08-26T08:00:00.000Z",
+    "activeSince": "2025-06-27T00:00:00.000Z"
+  },
+  {
+    "eventType": "EventFlag.Event_ReloadQuests_TimberStake_Kickstart",
+    "activeUntil": "2025-10-03T11:00:00.000Z",
+    "activeSince": "2025-06-27T11:00:00.000Z"
+  },
+  {
+    "eventType": "EventFlag.Season9.Phase2",
+    "activeUntil": "2025-08-07T00:00:00.000Z",
+    "activeSince": "2025-07-03T00:00:00.000Z"
+  },
+  {
+    "eventType": "EventFlag.Mayday.Quests.Phase4",
+    "activeUntil": "2025-07-17T00:00:00.000Z",
+    "activeSince": "2025-07-10T00:00:00.000Z"
+  },
+  {
+    "eventType": "EventFlag.Event_SparksS09_PlayNewFeatured_W04",
+    "activeUntil": "2025-07-18T00:00:00.000Z",
+    "activeSince": "2025-07-11T00:00:00.000Z"
+  },
+  {
+    "eventType": "EventFlag.Event_S36_MidSeasonCharacter_Quests",
+    "activeUntil": "2025-08-08T13:00:00.000Z",
+    "activeSince": "2025-07-11T13:00:00.000Z"
+  },
+  {
+    "eventType": "EventFlag.Event_Mars_Phase3",
+    "activeUntil": "2025-10-07T07:00:00.000Z",
+    "activeSince": "2025-07-15T08:00:00.000Z"
+  },
+  {
+    "eventType": "EventFlag.Event_Mars_Expert",
+    "activeUntil": "2025-10-07T07:00:00.000Z",
+    "activeSince": "2025-07-15T08:00:00.000Z"
   }
 ]
