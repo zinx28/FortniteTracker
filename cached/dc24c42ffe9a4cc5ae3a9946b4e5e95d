@@ -2,6 +2,7 @@
 ias.HttpConcurrentRequests=4
 Sprout.InGameLocker.EnableStreamingTexturePoolFlushing=0
 MM.UpdateIslandManagerFirst=0
+Store.CanShowRmtOnSaleRegularPrice=false
 [Ratings ESRB]
 !Region=Cleararray
 +Region="DO"

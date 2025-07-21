@@ -128,10 +128,17 @@ export async function diffFile(
             const prop2 = match[4];
             const newValue = match[5];
 
+            if (newValue.startsWith('((') && newValue.includes('TagName='))
+              return;
+
             if (!modificationsDataTable[dataTable]) {
               modificationsDataTable[dataTable] = {};
             }
 
+            const valueMatch = newValue.match(/\(Value=([^,]+),Curve=\(([^)]+)\),RegistryType="([^"]+)"\)/);
+            if (valueMatch && valueMatch[1])
+              modificationsDataTable[dataTable][prop2] = valueMatch[1];
+            else
             modificationsDataTable[dataTable][prop2] = newValue;
           } else {
             match = line.match(
@@ -350,8 +357,17 @@ export async function FortniteCloudStorage() {
                         );
 
                         if (arrayTest.length > 0)
+                          //console.log(arrayTest);
                           for (let i = 0; i < arrayTest.length; i += 10) {
-                            const chunk = arrayTest.slice(i, i + 10);
+                            const chunk = arrayTest
+                              .slice(i, i + 10)
+                              .map((field) => {
+                                return {
+                                  name: String(field.name).slice(0, 256),
+                                  value: String(field.value).slice(0, 1024),
+                                  inline: field.inline ?? false,
+                                };
+                              });
                             embed2.setFields(chunk);
                             EmbedMessages.push(embed2);
                           }
@@ -382,7 +398,15 @@ export async function FortniteCloudStorage() {
 
                         if (arrayTest.length > 0)
                           for (let i = 0; i < arrayTest.length; i += 10) {
-                            const chunk = arrayTest.slice(i, i + 10);
+                             const chunk = arrayTest
+                              .slice(i, i + 10)
+                              .map((field) => {
+                                return {
+                                  name: String(field.name).slice(0, 256),
+                                  value: String(field.value).slice(0, 1024),
+                                  inline: field.inline ?? false,
+                                };
+                              });
                             embed2.setFields(chunk);
                             EmbedMessages.push(embed2);
                           }

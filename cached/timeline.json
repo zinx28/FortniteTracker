@@ -115,11 +115,6 @@
     "activeSince": "2025-06-07T19:00:00.000Z"
   },
   {
-    "eventType": "EventFlag.Event_ForbiddenFruitQuests_Ecosystem_01",
-    "activeUntil": "2025-07-15T13:00:00.000Z",
-    "activeSince": "2025-06-17T09:30:00.000Z"
-  },
-  {
     "eventType": "EventFlag.Event_ForbiddenFruitQuests_Kickstart_01",
     "activeUntil": "2025-08-12T13:00:00.000Z",
     "activeSince": "2025-06-17T09:30:00.000Z"
@@ -250,19 +245,14 @@
     "activeSince": "2025-07-03T00:00:00.000Z"
   },
   {
-    "eventType": "EventFlag.Mayday.Quests.Phase4",
-    "activeUntil": "2025-07-17T00:00:00.000Z",
-    "activeSince": "2025-07-10T00:00:00.000Z"
-  },
-  {
-    "eventType": "EventFlag.Event_SparksS09_PlayNewFeatured_W04",
-    "activeUntil": "2025-07-18T00:00:00.000Z",
-    "activeSince": "2025-07-11T00:00:00.000Z"
-  },
-  {
     "eventType": "EventFlag.Event_S36_MidSeasonCharacter_Quests",
     "activeUntil": "2025-08-08T13:00:00.000Z",
     "activeSince": "2025-07-11T13:00:00.000Z"
+  },
+  {
+    "eventType": "EventFlag.Event_S36_HonesySail_Grant",
+    "activeUntil": "2025-07-30T13:00:00.000Z",
+    "activeSince": "2025-07-15T06:30:00.000Z"
   },
   {
     "eventType": "EventFlag.Event_Mars_Phase3",
@@ -273,6 +263,16 @@
     "eventType": "EventFlag.Event_Mars_Expert",
     "activeUntil": "2025-10-07T07:00:00.000Z",
     "activeSince": "2025-07-15T08:00:00.000Z"
+  },
+  {
+    "eventType": "EventFlag.Mayday.Quests.Phase5",
+    "activeUntil": "2025-07-24T00:00:00.000Z",
+    "activeSince": "2025-07-17T00:00:00.000Z"
+  },
+  {
+    "eventType": "EventFlag.Event_SparksS09_PlayNewFeatured_W05",
+    "activeUntil": "2025-07-25T00:00:00.000Z",
+    "activeSince": "2025-07-18T00:00:00.000Z"
   },
   {
     "eventType": "EventFlag.Event_DelMar_Season01_Dailies",
@@ -520,19 +520,14 @@
     "activeSince": "2025-07-03T00:00:00.000Z"
   },
   {
-    "eventType": "EventFlag.Mayday.Quests.Phase4",
-    "activeUntil": "2025-07-17T00:00:00.000Z",
-    "activeSince": "2025-07-10T00:00:00.000Z"
-  },
-  {
-    "eventType": "EventFlag.Event_SparksS09_PlayNewFeatured_W04",
-    "activeUntil": "2025-07-18T00:00:00.000Z",
-    "activeSince": "2025-07-11T00:00:00.000Z"
-  },
-  {
     "eventType": "EventFlag.Event_S36_MidSeasonCharacter_Quests",
     "activeUntil": "2025-08-08T13:00:00.000Z",
     "activeSince": "2025-07-11T13:00:00.000Z"
+  },
+  {
+    "eventType": "EventFlag.Event_S36_HonesySail_Grant",
+    "activeUntil": "2025-07-30T13:00:00.000Z",
+    "activeSince": "2025-07-15T06:30:00.000Z"
   },
   {
     "eventType": "EventFlag.Event_Mars_Phase3",
@@ -543,5 +538,15 @@
     "eventType": "EventFlag.Event_Mars_Expert",
     "activeUntil": "2025-10-07T07:00:00.000Z",
     "activeSince": "2025-07-15T08:00:00.000Z"
+  },
+  {
+    "eventType": "EventFlag.Mayday.Quests.Phase5",
+    "activeUntil": "2025-07-24T00:00:00.000Z",
+    "activeSince": "2025-07-17T00:00:00.000Z"
+  },
+  {
+    "eventType": "EventFlag.Event_SparksS09_PlayNewFeatured_W05",
+    "activeUntil": "2025-07-25T00:00:00.000Z",
+    "activeSince": "2025-07-18T00:00:00.000Z"
   }
 ]
