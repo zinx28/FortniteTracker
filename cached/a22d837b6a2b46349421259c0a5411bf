@@ -126,6 +126,17 @@ bBattleRoyaleMatchmakingEnabled=true
 +ChallengeSuppressedHotfixes=(Quest="Quest:quest_s36_14days_15",bSuppressed=true)
 +ChallengeSuppressedHotfixes=(Quest="Quest:quest_s36_14days_14",bSuppressed=true)
 +ChallengeSuppressedHotfixes=(Quest="Quest:quest_s36_14days_suppressed_01",bSuppressed=false,Replacing="Quest:quest_s36_14days_14")
+!ChallengeObjectiveCountHotfixes=ClearArray
++ChallengeObjectiveCountHotfixes=(Quest="Quest:quest_s36_roadtrip_01",Count=80000)
++ChallengeObjectiveCountHotfixes=(Quest="Quest:quest_s36_roadtrip_02",Count=80000)
++ChallengeObjectiveCountHotfixes=(Quest="Quest:quest_s36_roadtrip_03",Count=80000)
++ChallengeObjectiveCountHotfixes=(Quest="Quest:quest_s36_roadtrip_04",Count=80000)
++ChallengeObjectiveCountHotfixes=(Quest="Quest:quest_s36_roadtrip_05",Count=80000)
++ChallengeObjectiveCountHotfixes=(Quest="Quest:quest_s36_roadtrip_06",Count=80000)
++ChallengeObjectiveCountHotfixes=(Quest="Quest:quest_s36_roadtrip_07",Count=80000)
++ChallengeObjectiveCountHotfixes=(Quest="Quest:quest_s36_roadtrip_08",Count=80000)
++ChallengeObjectiveCountHotfixes=(Quest="Quest:quest_s36_roadtrip_09",Count=80000)
++ChallengeObjectiveCountHotfixes=(Quest="Quest:quest_s36_roadtrip_10",Count=80000)
 [/Script/FortniteGame.FortClientSettingsRecord]
 !ContextBehaviorDefinitions=ClearArray
 +ContextBehaviorDefinitions=(Name="UPictureInPictureSubsystem::StoreLastUsedPartner", bAllowRequestSave=false)
