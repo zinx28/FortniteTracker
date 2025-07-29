@@ -1,2 +1,6 @@
+[CsvProfiler]
++EnabledCategories=CharacterMovementDetailed
 [ConsoleVariables]
-Athena.IASLimiter.LimitIASHttpRateKiBPerSecond=128
+net.IpNetDriverUseReceiveThread=0
+net.IpConnectionUseSendTasks=0
+Athena.IASLimiter.IasHttpEnabled=0
